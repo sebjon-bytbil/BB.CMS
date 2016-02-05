@@ -1,0 +1,154 @@
+.vc_properties-list input[type="radio"] {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.vc_checkbox-label.displayblock{
+    display: block;
+}
+
+.vc_panel {
+    z-index: 1000;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* cptlist */
+.cptlist-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.cptlist-search {
+    background: #ddd;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.cptlist-search input[type=search] {
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 25px;
+    padding: 0 15px;
+    width: 80%;
+}
+
+.cptlist-search input[type=search]::-ms-clear,
+.cptlist-search input[type=search]::-ms-reveal {
+    display: none;
+    height: 0;
+    width : 0;
+}
+
+.cptlist-search input[type=search]::-webkit-search-decoration,
+.cptlist-search input[type=search]::-webkit-search-cancel-button,
+.cptlist-search input[type=search]::-webkit-search-results-button,
+.cptlist-search input[type=search]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.cptlist,
+.cptlist-added {
+    box-sizing: border-box;
+    float: left;
+    max-height: 160px;
+    min-height: 160px;
+    overflow-y: scroll;
+    width: 50%;
+}
+
+.cptlist {
+    border-right: 1px solid #eee;
+}
+
+.cptlist ul,
+.cptlist-added ul {
+    margin: 0;
+}
+
+.cptlist ul li,
+.cptlist-added ul li {
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 10px;
+    position: relative;
+    -webkit-transition: 0.1s all;
+    transition: 0.1s all;
+}
+
+.cptlist ul li.cptlist-loading,
+.cptlist-added ul li.cptlist-loading {
+    text-align: center;
+}
+
+.cptlist-loading img {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.cptlist ul li:hover,
+.cptlist-added ul li:hover {
+    background: rgba(9, 52, 89, 0.75);
+    color: #fff;
+}
+
+.cptlist ul li.cptlist-loading:hover,
+.cptlist-added ul li.cptlist-loading:hover {
+    background: none;
+}
+
+.cptlist ul li:after,
+.cptlist-added ul li:after {
+    border-radius: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    top: 10px;
+    width: 20px;
+    -webkit-transition: 0.1s all;
+    transition: 0.1s all;
+}
+
+.cptlist ul li:hover:after,
+.cptlist-added ul li:hover:after {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.cptlist ul li:after {
+    border: 1px solid rgba(9, 52, 89, 0.5);
+    color: rgba(9, 52, 89, 0.5);
+    content: '+';
+}
+
+.cptlist-added ul li:after {
+    border: 1px solid #ddd;
+    color: #ddd;
+    content: '-';
+}
+
+.cptlist ul li.cptlist-loading:after,
+.cptlist-added ul li.cptlist-loading:after {
+    display: none;
+}
+
+body.tinymce-wp-link form#wp-link .wp-link-text-field,
+body.tinymce-wp-link form#wp-link .link-target {
+    display: none;
+}

@@ -1,0 +1,613 @@
+/* BytBil Hemsida - Admin Theme */
+
+/* Font Import */
+
+/*@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700);*/
+
+@import url(../../fonts/proxima-nova/proxima-nova.css);
+
+
+body,
+#wpadminbar,
+#wpadminbar * {
+    font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    font-size: 1em;
+}
+
+a {
+    color: #0666a5;
+}
+
+a:hover {
+    color: #0666a5;
+    opacity: 0.9;
+}
+
+#contextual-help-link-wrap,
+#screen-options-link-wrap {
+    height: auto;
+}
+
+/* Buttons */
+.wp-core-ui .button,
+.wp-core-ui .button-primary,
+.wp-core-ui .button-secondary {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 28px;
+    height: auto;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+
+.wp-core-ui .button-primary {
+    background: #0666a5;
+    border-color: #0666a5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:focus {
+    background: #0666a5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0.9;
+}
+
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+.wrap .add-new-h2:hover,
+.wrap .page-title-action:hover {
+    background: #00a0d2;
+    color: #fff;
+}
+#screen-meta-links .show-settings {
+    border: 0;
+    background: 0 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #777;
+    line-height: auto;
+    height: auto;
+    padding: 5px 15px 6px;
+}
+
+/* Top Admin Bar */
+html.wp-toolbar {
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+
+.push-down-admin-menu {
+    margin-top: 52px !important;
+}
+
+#wpadminbar {
+    color: #111;
+    height: 52px;
+    background: #f7f7f7 url('../../img/bytbil-logo.png') no-repeat top left;
+    background-position-y: 6px;
+    background-position-x: 80px;
+    background-size: 75px;
+    box-shadow: rgba(0,0,0,0.3) 0px 0px 3px;
+}
+
+#wpadminbar .quicklinks {
+    margin-left: 240px;
+}
+
+#wpadminbar * {
+    font-size: 14px;
+}
+
+
+/* Adminbar Link Label */
+#wpadminbar a.ab-item,
+#wpadminbar>#wp-toolbar span.ab-label,
+#wpadminbar>#wp-toolbar span.noticon {
+    color: #666;
+}
+#wpadminbar .ab-top-menu > li > .ab-item,
+#wpadminbar .menupop .ab-item,
+#wpadminbar ul li:last-child .ab-item {
+    padding: 10px 15px;
+    box-shadow: none;
+    background: #fff;
+    width: auto;
+}
+
+#wpadminbar #wp-admin-bar-my-sites a.ab-item,
+#wpadminbar #wp-admin-bar-site-name a.ab-item {
+    text-overflow: inherit;
+}
+
+
+#wp-admin-bar-user-actions .menupop .ab-item {
+    box-shadow: none;
+}
+#wpadminbar .ab-top-menu > li > .ab-item:hover {
+    background: #fff;
+}
+/* Adminbar Label Hover */
+
+#wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label,
+#wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label,
+#wpadminbar>#wp-toolbar li.hover span.ab-label {
+    color: #ff8e3e;
+}
+/* Adminbar Link Hover */
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item,
+#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus,
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+    background: #fff;
+    color: #ff8e3e;
+}
+#wpadminbar #adminbarsearch:before,
+#wpadminbar .ab-icon:before,
+#wpadminbar .ab-item:before {
+    color: #aaa;
+}
+#wpadminbar .quicklinks .menupop ul li a:focus,
+#wpadminbar .quicklinks .menupop ul li a:focus strong,
+#wpadminbar .quicklinks .menupop ul li a:hover,
+#wpadminbar .quicklinks .menupop ul li a:hover strong,
+#wpadminbar .quicklinks .menupop.hover ul li a:focus,
+#wpadminbar .quicklinks .menupop.hover ul li a:hover,
+#wpadminbar li #adminbarsearch.adminbar-focused:before,
+#wpadminbar li .ab-item:focus:before,
+#wpadminbar li a:focus .ab-icon:before,
+#wpadminbar li.hover .ab-icon:before,
+#wpadminbar li.hover .ab-item:before,
+#wpadminbar li:hover #adminbarsearch:before,
+#wpadminbar li:hover .ab-icon:before,
+#wpadminbar li:hover .ab-item:before,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover {
+    color: #ff8e3e;
+}
+#wpadminbar .menupop .ab-sub-wrapper,
+#wpadminbar .shortlink-input {
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    background: #fff;
+}
+
+
+
+#wpadminbar .ab-submenu {
+    padding: 0;
+}
+#wpadminbar .ab-submenu .ab-item,
+#wpadminbar .quicklinks .menupop ul li a,
+#wpadminbar .quicklinks .menupop ul li a strong,
+#wpadminbar .quicklinks .menupop.hover ul li a,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a {
+    color: #666;
+}
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
+    background: #fff;
+}
+#wpadminbar .menupop .ab-sub-wrapper li a {
+    color: #f0a;
+}
+#wpadminbar .menupop .ab-sub-wrapper li a:hover {
+    color: #fa7;
+}
+
+/* Adminbar : Search */
+#wpadminbar #adminbarsearch {
+    height: 52px;
+}
+
+#wpadminbar #adminbarsearch:before {
+    top: 15px;
+}
+
+#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input {
+    height: 52px;
+}
+
+
+/* Arrow */
+#wpadminbar .menupop .menupop>.ab-item:before {
+    top: 10px;
+}
+
+#wpadminbar .quicklinks li .blavatar {
+    display: none;
+}
+
+
+/* Left Bar */
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+    width: 240px;
+    background-color: #444;
+}
+
+#adminmenuback {
+    /*background: #444 url('../../img/bytbil-logo-n.png') no-repeat top center;*/
+    background: #444;
+    background-position: center 15px;
+}
+
+#adminmenu .wp-submenu-head,
+#adminmenu a.menu-top {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 0;
+}
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-menu-arrow div,
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+.folded #adminmenu li.current.menu-top,
+.folded #adminmenu li.wp-has-current-submenu {
+    background: #0666a5;
+    color: #fff;
+}
+#adminmenu .wp-submenu-head,
+#adminmenu a.menu-top {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 0;
+}
+
+/* Hover/Focus */
+#adminmenu li.menu-top:hover,
+#adminmenu li.opensub>a.menu-top,
+#adminmenu li>a.menu-top:hover,
+#adminmenu li>a.menu-top:focus {
+    position: relative;
+    background: #555;
+    color: #fff;
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:focus,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:hover {
+    background: #0666a5;
+    color: #fff;
+}
+
+#adminmenu div.wp-menu-name {
+    padding: 15px 0;
+}
+
+#collapse-menu:hover,
+#collapse-menu:hover #collapse-button div:after {
+    color: #0666a5;
+}
+
+/* Icon */
+#adminmenu li a:focus div.wp-menu-image:before,
+#adminmenu li.opensub div.wp-menu-image:before,
+#adminmenu li:hover div.wp-menu-image:before {
+    color: #fff;
+}
+
+#adminmenu .wp-menu-image img {
+    padding-top: 17px;
+}
+
+div.wp-menu-image:before {
+    padding: 14px 0;
+}
+
+/* Submenu */
+#adminmenu .wp-submenu {
+    left: 240px;
+}
+
+#adminmenu .wp-submenu a:focus,
+#adminmenu .wp-submenu a:hover,
+#adminmenu a:hover,
+#adminmenu li.menu-top>a:focus {
+    color: #ff8e3e;
+}
+
+/* Folded Left Menu */
+.folded #adminmenu a.menu-top {
+    height: 50px;
+}
+
+
+/* Content and Footer */
+#wpcontent,
+#wpfooter {
+    margin-left: 240px;
+}
+
+/*Query MOnitor */
+
+body.wp-admin #wpwrap #qm {
+    margin-left: 240px !important;
+}
+
+
+/* Hides */
+#wpadminbar #wp-admin-bar-comments,
+#wp-admin-bar-wp-logo {
+    display: none !important;
+}
+
+.wp-menu-separator {
+    display: none;
+}
+
+#wpfooter {
+    display: none;
+}
+
+.update-nag {
+    display: none;
+}
+
+
+/* Visual Composer */
+
+
+.vc_col-sm-4 > .col-sm-4 {
+    width: 100%;
+}
+
+.vc_col-sm-6 > .col-sm-6 {
+    width: 100%;
+}
+
+.vc_col-sm-9 > .col-sm-9 {
+    width: 100%;
+}
+.vc_col-sm-3 > .col-sm-3 {
+    width: 100%;
+}
+
+div.wpb_row {
+    margin-bottom: 0;
+}
+/* IConsFor Elements */
+
+/* Accesspaket */
+.wpb-content-layouts .vc_element-icon {
+    background: url('../../img/ionicons/ios7-photos.png');
+    background-size: contain !important;
+}
+
+/* Accesspaket */
+.wpb-content-layouts #accesspackage .vc_element-icon {
+    background: url('../../img/ionicons/model-s.png');
+}
+
+
+/* Erbjudanden */
+.wpb-content-layouts #offers .vc_element-icon {
+    background: url('../../img/ionicons/ios7-pricetags.png');
+}
+
+/* Personal */
+.wpb-content-layouts #staff .vc_element-icon {
+    background: url('../../img/ionicons/person-stalker.png');
+}
+
+/* Galleri */
+.wpb-content-layouts #gallery .vc_element-icon {
+    background: url('../../img/ionicons/grid.png');
+}
+
+/* Accordion */
+.wpb-content-layouts #accordion .vc_element-icon {
+    background: url('../../img/ionicons/ios7-drag.png');
+}
+
+/* Menu */
+.wpb-content-layouts #menu .vc_element-icon {
+    background: url('../../img/ionicons/navicon.png');
+}
+
+/* Bildspel */
+.wpb-content-layouts #imageslider .vc_element-icon {
+    background: url('../../img/ionicons/ios7-albums-outline.png');
+}
+
+/* Kort */
+.wpb-content-layouts #card .vc_element-icon {
+    background: url('../../img/ionicons/ios7-browsers-outline.png');
+}
+
+/* Karta */
+.wpb-content-layouts #map .vc_element-icon {
+    background: url('../../img/ionicons/map.png');
+}
+
+/* Tabbar */
+.wpb-content-layouts #tabs .vc_element-icon {
+    background: url('../../img/ionicons/ios7-folder.png');
+}
+
+/* Ikoner */
+.wpb-content-layouts #icons .vc_element-icon {
+    background: url('../../img/ionicons/ios7-circle-filled.png');
+}
+
+/* Textblock */
+.wpb-content-layouts #text .vc_element-icon {
+    background: url('../../img/ionicons/ios7-compose-outline.png');
+}
+
+/* iFrame */
+.wpb-content-layouts #iframe .vc_element-icon {
+    background: url('../../img/ionicons/ios7-barcode-outline.png');
+}
+
+/* Knappar */
+.wpb-content-layouts #buttons .vc_element-icon {
+    background: url('../../img/ionicons/ios7-plus-outline.png');
+}
+
+
+/* Sociala */
+.wpb-content-layouts #social .vc_element-icon {
+    background: url('../../img/ionicons/android-social.png');
+}
+
+.wpb-elements-list-modal .wpb-content-layouts .vc_visible[data-element="reserve"]{
+    display: none;
+}
+
+
+/* Anläggningskort */
+.wpb-content-layouts #facilitycard .vc_element-icon {
+    background: url('../../img/ionicons/ios7-home.png');
+}
+
+
+/* Anläggningar */
+.wpb-content-layouts #facilities .vc_element-icon {
+    background: url('../../img/ionicons/ios7-location.png');
+}
+
+
+/* Nyheter */
+.wpb-content-layouts #news .vc_element-icon {
+    background: url('../../img/ionicons/ios7-paper.png');
+}
+
+/* Video */
+.wpb-content-layouts #video .vc_element-icon {
+    background: url('../../img/ionicons/ios7-film.png');
+}
+
+/* Breadcrumbs */
+.wpb-content-layouts #breadcrumbs .vc_element-icon {
+    background: url('../../img/ionicons/ios7-eye.png');
+}
+
+.wp-admin .vc_navbar .vc_navbar-brand {
+    display: none;
+}
+
+.wp-admin .vc_license-activation-notice {
+    display: none;
+}
+
+.wp-admin .composer-switch .logo-icon {
+    display: none;
+}
+
+.wp-admin .vc_properties-list {
+    padding-bottom: 40px;
+}
+
+.wp-admin .vc_panel {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    width: 90%;
+    position: fixed;
+    z-index: 100000;
+    top: 74px;
+    left: 5%;
+    height: auto !important;
+    min-height: 150px;
+    display: none;
+    border-color: #DDDDDD;
+}
+
+.wp-admin .vc_panel-footer {
+    padding-bottom: 30px;
+}
+
+.wp-admin .vc_panel-tabs > .vc_edit-form-tab.vc_active {
+    display: block;
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+}
+
+.vc_no-content-helper, .vc_welcome .icon {
+    background: transparent;
+}
+
+.vc_empty-placeholder {
+    margin: 0 !important;
+}
+
+.bytbil-logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.vc_welcome.vc_not-empty .bytbil-logo {
+    display: none;
+}
+
+.wp-admin .composer-switch a,
+.wp-admin .composer-switch a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 28px;
+    height: 28px;
+    padding: 4px 10px;
+    background-color: #0666a5;
+    border-radius: 0 !important;
+}
+
+.wp-admin #vc_teaser {
+    display: none;
+}
+
+/* Mobile */
+@media screen and (max-width: 782px) {
+    html.wp-toolbar,
+    #wpadminbar .ab-top-menu > li > .ab-item,
+    #wpadminbar .menupop .ab-item,
+    #wpadminbar ul li:last-child .ab-item {
+        padding: 0;
+    }
+    
+    #wp-admin-bar-query-monitor {
+        display: none !important;
+    }
+    
+    #wpadminbar .quicklinks {
+        margin-left: 0;
+    }
+    
+    
+    /* Visual Composer */
+    .vc_panel {
+        top: 74px;
+        width: 90%;
+        left: 5%;
+    }
+}

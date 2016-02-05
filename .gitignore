@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+/*/
+
+# Except
+!/.gitignore
+!/README.md
+!/wp-content/
+
+# But also
+/wp-content/uploads/

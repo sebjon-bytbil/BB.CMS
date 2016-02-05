@@ -1,0 +1,72 @@
+@import url(../../fonts/proxima-nova/proxima-nova.css);
+
+
+body {
+    background: transparent url('../../img/login-background.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    display: none;
+}
+
+#loginform {
+    padding-top: 100px;
+    background: #fff url('../../img/bytbil-logo.png') no-repeat center 30px;
+}
+
+.login p a,
+.wp-core-ui .button,
+.wp-core-ui .button-primary,
+.wp-core-ui .button-secondary
+{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 28px;
+    height: auto;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding: 0 12px 2px;
+    color: #fff;
+}
+
+.wp-core-ui .button-primary {
+    background: #0666a5;
+    border-color: #0666a5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:focus {
+    background: #0666a5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0.9;
+}
+
+.login #nav a,
+.login #backtoblog a,
+.wp-core-ui .button-secondary {
+    background: #ff8e3e;
+    border-color: #ff8e3e;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+}
+.login #nav a:hover,
+.login #nav a:focus,
+.login #backtoblog a:hover,
+.login #backtoblog a:focus,
+.wp-core-ui .button-secondary:hover,
+.wp-core-ui .button-secondary:focus {
+    background: #ff8e3e;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0.9;
+    color: #fff;
+}

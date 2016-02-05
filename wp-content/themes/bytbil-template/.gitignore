@@ -1,0 +1,3 @@
+assets/**/*.con.css
+assets/**/*.con.js
+node_modules/

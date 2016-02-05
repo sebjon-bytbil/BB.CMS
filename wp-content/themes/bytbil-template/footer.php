@@ -1,0 +1,107 @@
+<footer class="dark">
+
+    <div class="container">
+        <div class="col-xs-12 align-center">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/autoking-logotype-neg.png'; ?>" class="logotype" alt="Logotype" title="Logotype">
+        </div>
+        <div class="col-xs-12 col-sm-4 align-center">
+            <h4>Autoking Stockholm</h4>
+            <p>
+                Sankt Eriksgatan 46<br>
+                23 45 Stockholm
+            </p>
+            <p>
+                <strong>Telefon:</strong> 08-732 28 00<br>
+                <strong>E-post:</strong> <a href="mailto:kundservice@bytbil.com">kundservice@bytbil.com</a>
+            </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 align-center">
+            <h4>Autoking Stockholm</h4>
+            <p>
+                Sankt Eriksgatan 46<br>
+                23 45 Stockholm
+            </p>
+            <p>
+                <strong>Telefon:</strong> 08-732 28 00<br>
+                <strong>E-post:</strong> <a href="mailto:kundservice@bytbil.com">kundservice@bytbil.com</a>
+            </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 align-center">
+            <h4>Autoking Stockholm</h4>
+            <p>
+                Sankt Eriksgatan 46<br>
+                23 45 Stockholm
+            </p>
+            <p>
+                <strong>Telefon:</strong> 08-732 28 00<br>
+                <strong>E-post:</strong> <a href="mailto:kundservice@bytbil.com">kundservice@bytbil.com</a>
+            </p>
+        </div>
+
+
+    </div>
+    <!--<section id="by-bytbil" class="align-center">
+
+            <hr class="light-hr full-width">
+            <h4>Besök oss i Sociala Medier</h4>
+            <ul class="horizontal-list">
+                <li><a href="#"><i class="icon icon-facebook"></i> Facebook</a></li
+                <li><a href="#"><i class="icon icon-instagram"></i> Instagram</a></li>
+            </ul>
+            <hr class="light-hr full-width">
+            <p class="small light opacity-50">Producerad av BytBil.com för BytBil CMS.</p>
+    </section>-->
+
+</footer>
+
+<div class="overlay"></div>
+
+<script src="<?php echo get_template_directory_uri() . '/assets/js/script.min.js?rel=1454662204159'; ?>"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        var screen_width = window.innerWidth;
+        var screen_height = window.innerHeight;
+
+        // Initiate Flexslider
+        $('.flexslider').flexslider();
+
+        if (screen_width < 768) {
+
+            var lastScrollTop = 0;
+            var headerHeight = $('nav.navbar').outerHeight();
+
+            $(window).scroll(function (event) {
+
+                var st = $(this).scrollTop();
+
+                if (st > lastScrollTop + headerHeight) {
+                    $('nav.navbar').addClass('hide-header');
+                } else {
+                    $('nav.navbar').removeClass('hide-header');
+                }
+
+                lastScrollTop = st;
+            });
+
+        }
+
+        // Show CookieWarning
+        bb_cookieWarning();
+
+        //initMap();
+
+    });
+
+</script>
+
+<!--<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDixaP9fTuykPIFu9A7Mgy4R8zuH6UpCFc&callback=initMap">
+    </script>-->
+
+</body>
+</html>
