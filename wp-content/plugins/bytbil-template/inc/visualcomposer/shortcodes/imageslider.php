@@ -293,10 +293,11 @@ function bb_init_imageslider_shortcode()
         'category' => 'Innehåll',
         'front_enqueue_js' => array(
             VCADMINURL . 'assets/js/editor/imageslider_editor.js',
+            VCADMINURL . 'assets/js/vendor/jquery-ui.min.js',
             VCADMINURL . 'assets/js/datepicker.js'
         ),
         'front_enqueue_css' => array(
-            'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css'
+            VCADMINURL . 'assets/css/vendor/jquery-ui.min.css'
         ),
         'params' => array(
             array(
@@ -395,44 +396,18 @@ function bb_init_imageslider_shortcode()
                         'description' => 'Bestäm var i bilden textrutan skall placeras.'
                     ),
                     array(
-                        'type' => 'dropdown',
-                        'heading' => 'Länka slide till',
-                        'param_name' => 'dpt_link_type',
-                        'value' => array(
-                            'Ingenting' => 'none',
-                            'Intern sida' => 'internal',
-                            'Extern URL' => 'external',
-                            'Fil eller media' => 'file'
-                        ),
-                        'description' => 'Välj om du vill länka hela bilden till ett innehåll.'
-                    ),
-                    array(
-                        'type' => 'pages',
-                        'heading' => 'Sida',
-                        'param_name' => 'dpt_link_internal',
+                        'type' => 'vc_link',
+                        'heading' => 'Länk',
                         'value' => '',
-                        'description' => 'Välj en sida som bilden skall länka till.'
-                    ),
-                    array(
-                        'type' => 'textfield',
-                        'heading' => 'URL',
-                        'param_name' => 'dpt_link_external',
-                        'value' => '',
-                        'description' => 'Fyll i en adress som bilden skall länka till.'
-                    ),
-                    array(
-                        'type' => 'textfield',
-                        'heading' => 'Fil',
-                        'param_name' => 'dpt_link_file',
-                        'value' => '',
-                        'description' => 'Välj eller ladda upp en fil som bilden skall länka till.'
+                        'param_name' => 'dpt_link',
+                        'description' => 'Skapa en länk om du vill länka bilden.'
                     ),
                     array(
                         'type' => 'datepicker',
                         'heading' => 'Visa från',
                         'param_name' => 'dpt_start_date',
                         'value' => '',
-                        'description' => 'Full i det datum bilden skall visas från.'
+                        'description' => 'Fyll i det datum bilden skall visas från.'
                     ),
                     array(
                         'type' => 'datepicker',
@@ -569,7 +544,7 @@ function bb_init_imageslider_shortcode()
                     ),
                     array(
                         'type' => 'dropdown',
-                        'heading' => 'Länka slide till',
+                        'heading' => 'ANVÄND WP LINK ISTÄLLET',
                         'param_name' => 'imgt_link_type',
                         'value' => array(
                             'Ingenting' => 'none',
