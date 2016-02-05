@@ -11,19 +11,26 @@ module.exports = function(grunt) {
         },
         concat: {
             fonts: {
-                src: ['assets/fonts/**/*.css'],
+                src: ['assets/fonts/**/*.css', '!assets/fonts/**/*.con.css'],
                 dest: 'assets/fonts/fonts.con.css'
             },
             vendorcss: {
-                src: ['assets/css/vendor/**/*.css'],
+                src: ['assets/css/vendor/**/*.css', '!assets/css/vendor/**/*.con.css'],
                 dest: 'assets/css/vendor/vendor.con.css'
             },
             themecss: {
-                src: ['assets/css/theme/**/*.css'],
+                src: ['assets/css/theme/**/*.css', '!assets/css/theme/**/*.con.css'],
                 dest: 'assets/css/theme/theme.con.css'
             },
             vendorjs: {
-                src: ['assets/js/vendor/**/*.js'],
+                src: [
+                    'assets/js/vendor/jquery-1.11.1.min.js',
+                    'assets/js/vendor/bootstrap.min.js',
+                    'assets/js/vendor/jquery.flexslider-min.js',
+                    'assets/js/vendor/jquery-ui.min.js',
+                    'assets/js/vendor/extra/bootstrap-select.min.js',
+                    'assets/js/vendor/extra/jquery.cookiebar.js'
+                ],
                 dest: 'assets/js/vendor/vendor.con.js'
             },
             themejs: {

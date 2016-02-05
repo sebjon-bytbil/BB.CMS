@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang=""<?php if (is_user_logged_in()) {
+    echo ' class="push-down-admin-menu"';
+} ?>>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +37,7 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
 
         <!-- Main -->
-        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1454582625629'; ?>" rel="stylesheet">
+        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1454670330812'; ?>" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,6 +46,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
+        <?php wp_head(); ?>
     </head>
 
     <body>

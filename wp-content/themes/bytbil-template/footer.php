@@ -58,50 +58,12 @@
 
 <div class="overlay"></div>
 
-<script src="<?php echo get_template_directory_uri() . '/assets/js/script.min.js?rel=1454662204159'; ?>"></script>
-
-<script type="text/javascript">
-
-    $(document).ready(function() {
-
-        var screen_width = window.innerWidth;
-        var screen_height = window.innerHeight;
-
-        // Initiate Flexslider
-        $('.flexslider').flexslider();
-
-        if (screen_width < 768) {
-
-            var lastScrollTop = 0;
-            var headerHeight = $('nav.navbar').outerHeight();
-
-            $(window).scroll(function (event) {
-
-                var st = $(this).scrollTop();
-
-                if (st > lastScrollTop + headerHeight) {
-                    $('nav.navbar').addClass('hide-header');
-                } else {
-                    $('nav.navbar').removeClass('hide-header');
-                }
-
-                lastScrollTop = st;
-            });
-
-        }
-
-        // Show CookieWarning
-        bb_cookieWarning();
-
-        //initMap();
-
-    });
-
-</script>
+<script src="<?php echo get_template_directory_uri() . '/assets/js/script.min.js?rel=1454678148544'; ?>"></script>
 
 <!--<script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDixaP9fTuykPIFu9A7Mgy4R8zuH6UpCFc&callback=initMap">
     </script>-->
 
+<?php wp_footer(); ?>
 </body>
 </html>
