@@ -51,6 +51,8 @@ function vc_remove_standard_elements()
         vc_remove_element('vc_posts_slider');
         vc_remove_element('vc_progress_bar');
         vc_remove_element('vc_raw_html');
+        vc_remove_element('vc_raw_js');
+        vc_remove_element('vc_separator');
         vc_remove_element('vc_tab');
         vc_remove_element('vc_tabs');
         vc_remove_element('vc_teaser_grid');
