@@ -1,0 +1,407 @@
+/** 
+ * We developed this code with our hearts and passion.
+ * @package wp-media-folder
+ * @copyright Copyright (C) 2014 JoomUnited (http://www.joomunited.com). All rights reserved.
+ * @license Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+ */
+.media-modal .wpmf-attachments-browser {
+    position : relative;
+    top: 10px; 
+    left: 0;
+    right: 300px;
+    overflow: auto;
+    padding: 0 8px;
+    z-index: 10;
+}
+
+.wpmf-attachments-browser .wpmf-attachment {
+    margin : 8px;
+    width: 115px;
+    height: 115px;  
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0 10px 20px;
+    color: #464646;
+    list-style: none;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.wpmf-attachments-browser .wpmf-attachment.ui-hoverClass .wpmf-attachment-preview  {
+    border : 3px solid #1e8cbe;
+}
+
+.wpmf-attachments-browser .wpmf-attachment .icon {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20%;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    -webkit-box-shadow: inset 0 0 15px rgba( 0, 0, 0, 0.1 ), inset 0 0 0 1px rgba( 0, 0, 0, 0.05 );
+    box-shadow: inset 0 0 15px rgba( 0, 0, 0, 0.1 ), inset 0 0 0 1px rgba( 0, 0, 0, 0.05 );
+    background: #eee;
+    cursor: pointer;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview .filename {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    max-height: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: bold;
+    background: rgba( 255, 255, 255, 0.8 );
+    -webkit-box-shadow: inset 0 0 0 1px rgba( 0, 0, 0, 0.15 );
+    box-shadow: inset 0 0 0 1px rgba( 0, 0, 0, 0.15 );
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview .wpmficon-edit {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    font-size:16px;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview .wpmficon-delete {
+    position: absolute;
+    right: 4px;
+    top: 22px;
+    font-size:16px;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview .wpmficon-edit, .wpmf-attachments-browser .wpmf-attachment-preview .wpmficon-delete {
+    display: none;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview:hover .wpmficon-edit, .wpmf-attachments-browser .wpmf-attachment-preview:hover .wpmficon-delete {
+    display: block;
+    opacity: 0.6;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview:hover .wpmficon-edit:hover, .wpmf-attachments-browser .wpmf-attachment-preview:hover .wpmficon-delete:hover {
+    display: block;
+    opacity: 1;
+}
+
+.attachments-browser .attachments/*, .attachments-browser .uploader-inline*/ {
+    overflow: hidden;
+    position: relative !important;
+    outline: none;
+}
+
+.upload-php .attachments-browser .attachments{
+    position: static !important;
+}
+
+.media-modal .wpmf-attachments-wrapper {
+    overflow: auto;
+    position: absolute;
+    top: 105px;
+    bottom: 0;
+    left: 0;
+    right: 300px;
+    
+}
+/*.media-modal .wpmf-attachments-browser {
+    overflow: auto;
+    max-height: 280px;
+}
+.uploader-inline-content {
+    bottom: 0;
+    top: auto;
+}
+.media-frame .uploader-inline {
+    margin-bottom: 0;
+}*/
+/** Todo : see why this content is added to the selection **/
+.media-frame-toolbar .wpmf-attachments-browser, .media-frame-toolbar .wpmf-breadcrumb {
+    display: none;
+}
+
+ul.attachments {
+    
+}
+
+ul.attachments .attachment {
+    z-index: 110;
+}
+
+.media-modal .wpmf-categories {
+    margin-top: 11px !important;
+    margin-right: 10px;
+}
+
+.wpmf-attachment.ui-draggable-dragging, .attachment.ui-draggable-dragging {
+    z-index: 120 !important;
+}
+
+.wpmf-breadcrumb {
+    display: block;
+    left: 0;
+    right: 300px;
+    overflow: auto;
+    margin : 0;
+    z-index: 10;
+    margin-left: 15px;
+    
+}
+
+.wpmf-breadcrumb li {
+    display: inline;
+}
+
+.wpmf-breadcrumb, .wpmf-breadcrumb a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.wpmf-dragging {
+    z-index: 130;
+}
+
+span.draggableNumber {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 12px;
+    color: #ffffff;
+    border: 2px solid #888888;
+    background-color: #888888;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* upload.php grid page */
+.upload-php .wpmf-clear {
+    clear: left;
+}
+
+.media-selection{
+    right:380px;
+}
+
+.media-frame.mode-grid .media-toolbar-secondary .delete-selected-button {
+    margin-right: 10px !important;
+}
+
+.wpmf-move-header {
+    width: 20px;
+}
+
+.wpmf-move {
+    cursor: pointer;
+    font-size: 30px !important;
+}
+
+.wpmf-move.selected {
+        color : #2ea2cc;
+}
+
+.wpmf-move:hover {
+    color : #515151;
+}
+.wpmf-move:hover.selected {
+    color : #1084AE;
+}
+
+.media-frame.mode-grid .wpmf-attachments-wrapper {
+    margin-top: -10px;
+}
+
+.media-frame.mode-grid .wpmf-attachments-browser {
+    margin-top: 10px;
+}
+
+#posts-filter .wpmf-attachments-wrapper {
+    margin-left: -10px;
+}
+
+#posts-filter .wpmf-attachments-browser {
+    margin-top: 10px;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?137reo');
+	src:url('../fonts/icomoon.eot?#iefix137reo') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?137reo') format('woff'),
+		url('../fonts/icomoon.ttf?137reo') format('truetype'),
+		url('../fonts/icomoon.svg?137reo#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.wpmf-attachment [class^="icon-"], .wpmf-attachment [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*
+.icon-Drag_and_Drop:before {
+	content: "\e600";
+}*/
+
+@media only screen and (max-width: 640px), screen and (max-height: 400px) {
+    .media-modal .wpmf-attachments-wrapper{
+        right : 0;
+    }
+}
+
+.menu-left{
+    width: 150px;
+    height: 200px;
+    float:left;
+    padding: 8px;
+    position: relative;
+}
+
+.upload-php .media-frame-content .wpmf-attachments-wrapper .wpmf-attachments-browser{
+    width: 75%;
+    float:left;
+}
+
+#wp-link-backdrop{
+    z-index: 999999 !important;
+}
+
+#wp-link-wrap{
+    z-index: 99999999999 !important;
+}
+
+.link-btn{
+    padding: 2px 3px 3px 3px;
+    line-height: normal;
+    position: absolute;
+}
+
+.mce-ico.mce-i-link{
+    color: #777;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.compat-field-wpmf_gallery_custom_image_link input.text{
+    width: 77% !important;
+}
+
+#wp-wpmf-editor-wrap{
+    display: none !important;
+}
+
+.compat-item span.alignleft{
+    font-size: 12px;
+}
+
+.media-sidebar .setting input[type=checkbox]{
+    margin: 8px 3px 0 !important; 
+}
+
+.media-modal .media-sidebar .setting span{
+    margin: 0 !important;
+    margin-right: 4% !important;
+    padding-top: 8px !important;
+}
+
+.upload-php .media-frame-content{
+    overflow:auto !important;
+}
+
+.upload-php .mode-eml-bulk-edit .attachments-browser .attachments{
+    position: absolute !important;
+    overflow: auto !important;
+}
+
+#wpmf-display-media-filters{
+    display: none !important;
+}
+
+.mode-grid .addFolder{
+    margin-top: 10px !important;
+}
+
+.div_displaymedia{
+    float: left;
+}
+
+.media-frame.hide-router .media-toolbar .attachment-filters{
+    display: none;
+}
+
+.media-frame.hide-router .wpmf-attachments-wrapper{
+    top: 0;
+}
+
+.div_displaymedia{
+   max-height: 50px;
+}
+
+.media-frame #addFolder{
+    float: left;
+}
+
+#media-order-folder,#media-order-media{
+    margin-bottom: 10px !important;
+}
+
+html[dir="rtl"] .media-modal .wpmf-attachments-wrapper, html[dir="rtl"] .media-modal .wpmf-attachments-wrapper .wpmf-attachments-browser{
+    right:0;
+    left: 300px;
+}
+html[dir="rtl"] .mode-grid #addFolder,html[dir="rtl"] .mode-grid .div_displaymedia,html[dir="rtl"] #jao,html[dir="rtl"] .upload-php .media-frame-content .wpmf-attachments-browser,html[dir="rtl"] .upload-php .wpmf-attachments-browser .wpmf-attachment,html[dir="rtl"] .upload-php .attachments-browser .attachments{
+    float: right !important;
+}
+
+html[dir="rtl"] .upload-php .attachments-browser ul.attachments{
+    width: 100%;
+}
+
+html[dir="rtl"] .media-frame #addFolder,html[dir="rtl"] .media-frame .div_displaymedia{
+    float: right;
+}
+
+
+@media screen and (max-width: 1368px) { 
+    .media-modal.wp-core-ui.acf-expanded .wpmf-attachments-wrapper{
+        right:700px;
+        top:225px;
+    }
+    
+    html[dir="rtl"] .media-modal.wp-core-ui.acf-expanded .wpmf-attachments-wrapper{
+        left:700px;
+        top:225px;
+    }
+}
+
+@media screen and (min-width: 1600px) { 
+    .media-modal.wp-core-ui.acf-expanded .wpmf-attachments-wrapper{
+        right:700px;
+        top:150px;
+    }
+    
+    html[dir="rtl"] .media-modal.wp-core-ui.acf-expanded .wpmf-attachments-wrapper{
+        left:700px;
+        top:150px;
+    }
+}

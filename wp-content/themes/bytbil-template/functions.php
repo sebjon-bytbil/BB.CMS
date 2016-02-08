@@ -1,11 +1,19 @@
 <?php
 
+// Plugins
+include 'plugins/bytbil-erbjudanden/bytbil-erbjudanden.php';
+
 // Activates specified plugins on theme load
 function bbtemplate_activate_plugins()
 {
     $plugins = array(
+        'acf-image-crop-add-on/acf-image-crop.php', # ACF Image Crop
+        'acf-repeater/acf-repeater.php', # ACF Repeater
+        'advanced-custom-field-repeater-collapser/acf_repeater_collapser.php', # ACF Repeater Collapser
+        'advanced-custom-fields/acf.php', # ACF
         'bytbil-template/bytbil-template.php', # BytBil Mallsidor
-        'js_composer/js_composer.php' # Visual Composer
+        'js_composer/js_composer.php', # Visual Composer
+        'wp-media-folder/wp-media-folder.php' # WP Media Folder
     );
 
     include_once(ABSPATH . 'wp-admin/includes/plugin.php');
@@ -21,8 +29,13 @@ add_action('after_switch_theme', 'bbtemplate_activate_plugins');
 function bbtemplate_deactivate_plugins()
 {
     $plugins = array(
+        'acf-image-crop-add-on/acf-image-crop.php', # ACF Image Crop
+        'acf-repeater/acf-repeater.php', # ACF Repeater
+        'advanced-custom-field-repeater-collapser/acf_repeater_collapser.php', # ACF Repeater Collapser
+        'advanced-custom-fields/acf.php', # ACF
         'bytbil-template/bytbil-template.php', # BytBil Mallsidor
-        'js_composer/js_composer.php' # Visual Composer
+        'js_composer/js_composer.php', # Visual Composer
+        'wp-media-folder/wp-media-folder.php' # WP Media Folder
     );
 
     include_once(ABSPATH . 'wp-admin/includes/plugin.php');

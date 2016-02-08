@@ -1,0 +1,357 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TRADUCCION ESPAÑOL\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: STAFF JOOMUNITED <tristan@joomunited.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_ES\n"
+
+msgid "Categories imported into WP Media Folder. Enjoy!!!"
+msgstr "Categorías importadas en la carpeta de medios WP. ¡ Disfrute!"
+
+msgid "Import categories now"
+msgstr "Importar categorías "
+
+msgid "No thanks "
+msgstr "No gracias "
+
+msgid "View all categories"
+msgstr "Ver todas las categorías"
+
+msgid ""
+"You've just installed WP Media Folder, to save your time we can import your "
+"media categories into WP Media Folder"
+msgstr ""
+"Sólo has instalado WP carpeta de medios, para ahorrar tiempo  podemos "
+"importar las categorías de medios de comunicación en la carpeta de medios WP"
+
+msgid "Create Folder"
+msgstr "Crear Carpeta"
+
+msgid "Media Library"
+msgstr "Biblioteca de medios"
+
+msgid "New folder"
+msgstr "Nueva carpeta"
+
+msgid "Please give a name to this new folder"
+msgstr "Por favor, dar un nombre a esta nueva carpeta"
+
+msgid "A term with the name and slug already exists with this parent."
+msgstr "Un término con el nombre y la babosa ya existe con este padre."
+
+msgid "this folder contains sub-folder, delete sub-folders before"
+msgstr "esta carpeta contiene subcarpeta, eliminar subcarpetas antes"
+
+msgid "Delete"
+msgstr "Eliminar"
+
+msgid "Done"
+msgstr "Hecho"
+
+msgid "Size"
+msgstr "Tamaño"
+
+msgid "Update"
+msgstr "Actualizar"
+
+msgid "Override image"
+msgstr "Reemplazar imagen"
+
+msgid "Settings saved."
+msgstr "Ajustes guardados."
+
+msgid "WordPress taxonomy"
+msgstr "Taxonomía de WordPress"
+
+msgid "WP Media Folder Taxonomy"
+msgstr "Taxonomía de carpeta WP medios"
+
+msgid "Import WP media categories"
+msgstr "Importación de categorías de medios de WP"
+
+msgid "Display only my own media"
+msgstr "Mostrar sólo mis propios medios"
+
+msgid "Create a gallery from folder"
+msgstr "Crear una galería de carpeta"
+
+msgid "Are you sure to want to delete this folder"
+msgstr "¿Está seguro que desea eliminar esta carpeta?"
+
+msgid "Media Folder Settings"
+msgstr "Configuración de la carpeta de los medios de comunicación"
+
+msgid "Gallery feature"
+msgstr "Característica de la galería"
+
+msgid "Enable the gallery feature"
+msgstr "Habilitar la característica de Galería"
+
+msgid "Gallery image sizes available"
+msgstr "Tamaños de la imagen de la Galería disponibles"
+
+msgid "Gallery themes settings"
+msgstr "Ajustes de temas Galería"
+
+msgid "Determine the space between images"
+msgstr "Determinar el espacio entre imágenes"
+
+msgid "Auto create one folder per editor"
+msgstr "Auto crear una carpeta por editor"
+
+msgid ""
+"Show only own user media (an option will be added for admin in the media "
+"manager)            "
+msgstr ""
+"Mostrar sólo usuarios propios los medios de comunicación (se añadirá una "
+"opción para el administrador en el administrador de medios de comunicación)"
+
+msgid "Save Changes"
+msgstr "Guardar los cambios"
+
+msgid "Masonry Theme"
+msgstr "Tema Masonry"
+
+msgid "Space between images (padding)"
+msgstr "Espacio entre imágenes (relleno)"
+
+msgid "Portfolio Theme"
+msgstr "Tema Portafolio"
+
+msgid "px"
+msgstr "px"
+
+msgid "Default"
+msgstr "Por defecto"
+
+msgid "Masonry"
+msgstr "Masonry"
+
+msgid "Portfolio"
+msgstr "Portafolio"
+
+msgid "Slider"
+msgstr "Control deslizante"
+
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+msgid "Medium"
+msgstr "Medio"
+
+msgid "Large"
+msgstr "Largo"
+
+msgid "Full Size"
+msgstr "Tamaño completo"
+
+msgid "Link to"
+msgstr "Enlace a"
+
+msgid "Link target"
+msgstr "Enlace destino"
+
+msgid "Same Window"
+msgstr "Misma ventana"
+
+msgid "New Window"
+msgstr "Nueva Ventana"
+
+msgid "Missing Attachment"
+msgstr "falta archivo adjunto"
+
+msgid "Gallery themes"
+msgstr "Galeria de temas"
+
+msgid "Columns"
+msgstr "Columnas "
+
+msgid "Gallery image size"
+msgstr "Tamaño de la imagen de Galería"
+
+msgid "Lightbox size"
+msgstr "Tamaño Lightbox"
+
+msgid "Action on click"
+msgstr "Acción al hacer clic"
+
+msgid "Lightbox"
+msgstr "Lightbox"
+
+msgid "Attachment Page"
+msgstr "Pagina de archivo adjunto"
+
+msgid "Auto insert image in folder"
+msgstr "Auto insertar imagen en carpeta"
+
+msgid "No"
+msgstr "No"
+
+msgid "Yes"
+msgstr "Si"
+
+msgid "No Categories"
+msgstr "No hay categorías"
+
+msgid "None"
+msgstr "Ninguno"
+
+msgid "Sync/Import NextGEN galleries"
+msgstr "Sync/Importar galerías de NextGEN"
+
+msgid "Gallery parameters"
+msgstr "Parámetros de la galería"
+
+msgid "Advanced parameters"
+msgstr "Parámetros avanzados"
+
+msgid "Access management"
+msgstr "Gestión de acceso"
+
+msgid "Drag and Drop me hover a folder"
+msgstr "Arrastrar y soltar me suspender una carpeta"
+
+msgid "Back"
+msgstr "Atrás"
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "You are here"
+msgstr "Usted está aquí"
+
+msgid "Select the image size you can load in galleries. Custom image size available here can be generated by 3rd party plugins"
+msgstr "Seleccione el tamaño de la imagen que se puede cargar en galerías. Tamaño de imagen personalizada disponible aquí puede generarse mediante plugins de 3rd partes"
+
+msgid "Name (Ascending)"
+msgstr ""
+
+msgid "Name (Descending)"
+msgstr ""
+
+msgid "ID (Ascending)"
+msgstr ""
+
+msgid "ID (Descending)"
+msgstr ""
+
+msgid "Date (Ascending)"
+msgstr ""
+
+msgid "Date (Descending)"
+msgstr ""
+
+msgid "Title (Ascending)"
+msgstr ""
+
+msgid "Title (Descending)"
+msgstr ""
+
+msgid "Size (Ascending)"
+msgstr ""
+
+msgid "Size (Descending)"
+msgstr ""
+
+msgid "File type (Ascending)"
+msgstr ""
+
+msgid "File type (Descending)"
+msgstr ""
+
+msgid "PDF"
+msgstr ""
+
+msgid "Zip & archives"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "List default fillter size"
+msgstr ""
+
+msgid "List default fillter weight"
+msgstr ""
+
+msgid "Width"
+msgstr ""
+
+msgid "Height"
+msgstr ""
+
+msgid "unit"
+msgstr ""
+
+msgid "Add new size"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Image dimension filtering available in filter. Display image with a dimension and above."
+msgstr ""
+
+msgid "Edit dimension"
+msgstr ""
+
+msgid "Remove dimension"
+msgstr ""
+
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
+msgid "Remove weight"
+msgstr ""
+
+msgid "Edit weight"
+msgstr ""
+
+msgid "Add weight"
+msgstr ""
+
+msgid "Select weight range which you would like to display in media library filter"
+msgstr ""
+
+msgid "kB"
+msgstr ""
+
+msgid "MB"
+msgstr ""
+
+msgid "(Ascending)"
+msgstr ""
+
+msgid "(Descending)"
+msgstr ""
+
+msgid "Sort attachment"
+msgstr ""
+
+msgid "Small View"
+msgstr ""
+
+msgid "Minimal size"
+msgstr ""
+
+msgid "All weight"
+msgstr ""
+
+msgid "Sort folder"
+msgstr ""
+
+msgid "This value is already existing"
+msgstr ""

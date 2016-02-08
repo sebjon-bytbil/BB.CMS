@@ -1,0 +1,47 @@
+.replace_wrap{
+    width: 100%;
+    float: left;
+}
+
+.media-modal .compat-field-wpmfbtn_select th{
+    width: 0 !important;
+}
+
+.media-modal .compat-field-wpmfbtn_select td{
+    width: 96% !important;
+}
+
+.replace_wrap .description{
+    margin: 7px 5px;
+}
+
+.media-modal.acf-expanded .replace_wrap{
+    float: left;
+}
+
+.compat-field-wpmfbtn_select:not(.upload-php .compat-field-wpmfbtn_select){
+    display: none !important;
+}
+
+.media-modal .media-uploader-status .upload-errors.wpmferror_replace{
+    margin: 8px auto 0;
+    padding: 8px;
+    border-left : 3px solid #dd823b;
+}
+
+.media-modal .media-uploader-status .upload-errors.wpmferror_replace .upload-error{
+    background: none;
+    border: 0;
+}
+
+.media-modal .upload-errors.wpmferror_replace .upload-dismiss-errors{
+    color: #dd823b;
+}
+
+.media-modal .upload-errors.wpmferror_replace .upload-error-label{
+    display: none;
+}
+
+.media-modal .upload-errors.wpmferror_replace .upload-error-message{
+    color: #000;
+} 
