@@ -1,6 +1,6 @@
 <?php if (!empty($items)) : ?>
 
-<div id="offers" class="container">
+<div id="offers">
 
 <?php foreach ($items as $key => $item) : ?>
 
@@ -16,10 +16,13 @@
 
 <?php endforeach; ?>
 
+    <div class="clearfix"></div>
+
 <?php if ($link_all_offers) : ?>
-    <div class="container">
+    <div>
         <a href="#" class="button default">Se alla erbjudanden</a>
     </div>
+    <div class="clearfix"></div>
 <?php endif; ?>
 
 </div>
