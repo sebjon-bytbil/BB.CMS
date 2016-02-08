@@ -89,6 +89,10 @@ body {
     font-size: 15px;
 }
 
+.wrapper {
+    max-width: 1170px;
+}
+
 /* General Font */
 body,
 html,
@@ -173,6 +177,7 @@ nav,
 
 .navbar-fixed-top {
     background: #fff;
+    z-index: 1001;
 }
 
 .navbar-brand {

@@ -15,37 +15,6 @@ include('params/wysiwyg.php');
 // Shortcodes
 include('shortcodes/separator.php'); # Avskiljare
 include('shortcodes/imageslider.php'); # Bildspel
-//include('shortcodes/accesspackage.php'); # Accesspaket
-//include('shortcodes/accordion.php'); # Accordion
-//include('shortcodes/facilities.php'); # Anläggningar
-//include('shortcodes/facility.php'); # Anläggning
-//include('shortcodes/facilitycard.php'); # Anläggningskort
-//include('shortcodes/reserve.php'); # Boka provkörning
-//include('shortcodes/breadcrumbs.php'); # Breadcrumbs
-//include('shortcodes/offers.php'); # Erbjudanden
-//include('shortcodes/form.php'); # Formulär
-//include('shortcodes/gallery.php'); # Galleri
-//include('shortcodes/iframe.php'); # IFrame
-//include('shortcodes/icons.php'); # Ikoner
-//include('shortcodes/map.php'); # Karta
-//include('shortcodes/buttons.php'); # Knappar
-//include('shortcodes/contact.php'); # Kontaktformulär
-//include('shortcodes/card.php'); # Kort
-//include('shortcodes/menu.php'); # Meny
-//include('shortcodes/news.php'); # Nyheter
-//include('shortcodes/staff.php'); # Personal
-//include('shortcodes/social.php'); # Sociala länkar
-//include('shortcodes/tabs.php'); # Tabbar
-//include('shortcodes/text.php'); # Text block
-//include('shortcodes/video.php'); # Video
-//include('shortcodes/openhours.php'); # Öppettider
-//include('shortcodes/vehicles.php'); # Bilmodeller
-
-// Custom params
-//include('params/integer.php');
-//include('params/map.php');
-//include('params/multiselect.php');
-//include('params/cptlist.php');
 
 /**
  * Adds custom CSS to Visual Composer
