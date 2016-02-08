@@ -151,7 +151,7 @@ function bb_init_map_shortcode()
                     'Anläggning' => 'facility',
                     'Karta' => 'map'
                 ),
-                'description' => 'Välj om du vill visa en karta från en existerande anläggning eller on du vill hitta en plats på kartan.'
+                'description' => 'Välj om du vill visa en karta från en existerande anläggning eller om du vill hitta en plats på kartan.'
             ),
             array(
                 'type' => 'cptlist',

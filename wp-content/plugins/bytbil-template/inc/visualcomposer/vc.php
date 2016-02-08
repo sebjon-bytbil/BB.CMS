@@ -7,7 +7,9 @@ include('includes/remove-standard-elements.php');
 
 // Custom params
 include('params/cpt.php');
+include('params/cptlist.php');
 include('params/datepicker.php');
+include('params/map.php');
 include('params/pages.php');
 include('params/radio.php');
 include('params/wysiwyg.php');
@@ -16,6 +18,7 @@ include('params/wysiwyg.php');
 include('shortcodes/separator.php'); # Avskiljare
 include('shortcodes/imageslider.php'); # Bildspel
 include('shortcodes/offers.php'); # Erbjudanden
+include('shortcodes/map.php'); # Karta
 include('shortcodes/puffs.php'); # Puffar
 
 /**

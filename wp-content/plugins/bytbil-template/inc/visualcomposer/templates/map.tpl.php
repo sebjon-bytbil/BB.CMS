@@ -1,4 +1,4 @@
-<div class="bb-map">
+<div id="map" class="bb-map">
 
     <?php if($map_type == 'facility') { ?>
 

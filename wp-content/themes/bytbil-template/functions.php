@@ -1,6 +1,7 @@
 <?php
 
 // Plugins
+include 'plugins/bytbil-anlaggning/bytbil-anlaggning.php';
 include 'plugins/bytbil-erbjudanden/bytbil-erbjudanden.php';
 
 // Activates specified plugins on theme load
