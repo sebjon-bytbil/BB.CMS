@@ -656,7 +656,7 @@ a.button.ghost.default {
 /* Erbjudanden */
 
 #offers {
-	padding: 30px 0;
+	padding: 0;
 	border-bottom: 1px solid #ddd;
 }
 

@@ -16,6 +16,9 @@ class OffersShortcode extends ShortcodeBase
         $brand_dropdown = (self::Exists($atts['brand_dropdown']) == '1') ? true : false;
         $atts['brand_dropdown'] = $brand_dropdown;
 
+        $all_link = (self::Exists($atts['link_all_offers']) == '1') ? true : false;
+        $atts['link_all_offers'] = $all_link;
+
         if ($atts['offers_choice'] == 'all') {
 
             $show_as_slideshow = (self::Exists($atts['show_as_slideshow']) == '1') ? true : false;
@@ -138,7 +141,7 @@ class OffersShortcode extends ShortcodeBase
                     // Headline
                     $items[$i]['id'] = get_the_ID();
                     $items[$i]['headline'] = get_the_title();
-            
+
                     $items[$i]['permalink'] = get_the_permalink();
 
                     // Ingress
@@ -149,6 +152,9 @@ class OffersShortcode extends ShortcodeBase
                     $items[$i]['image'] = $offer_image['url'];
                     $items[$i]['image_medium'] = $offer_image['sizes']['slideshow-medium'];
                     $items[$i]['image_full'] = $offer_image['sizes']['slideshow-full'];
+
+                    // Date
+                    $items[$i]['date_stop'] = get_field('offer-date-stop');
 
                     // Brands
                     $offer_brands = get_field('offer-brands');
@@ -352,7 +358,16 @@ function bb_init_offers_shortcode()
                 'value' => array(
                     'Ja' => '1'
                 )
-            )
+            ),
+           array(
+               'type' => 'checkbox',
+               'heading' => 'Länka till alla erbjudanden',
+               'param_name' => 'link_all_offers',
+               'description' => 'Bocka i om vill visa en länk till alla erbjudanden.',
+               'value' => array(
+                   'Ja' => '1'
+               )
+           )
         )
     );
 

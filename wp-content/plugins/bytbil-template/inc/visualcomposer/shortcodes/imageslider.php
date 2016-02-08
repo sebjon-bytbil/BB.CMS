@@ -286,7 +286,7 @@ function bb_init_imageslider_shortcode()
     $map = array(
         'name' => 'Bildspel',
         'base' => 'imageslider',
-        'description' => 'Bildspel',
+        'description' => 'Bildspel med bilder eller existerand erbjudanden',
         'class' => '',
         'show_settings_on_create' => true,
         'weight' => 10,
