@@ -14,6 +14,10 @@ module.exports = function(grunt) {
                 src: ['assets/fonts/**/*.css', '!assets/fonts/**/*.con.css'],
                 dest: 'assets/fonts/fonts.con.css'
             },
+            devcss: {
+                src: ['assets/css/**/*.css', '!assets/css/**/*.con.css'],
+                dest: 'assets/css/style.con.css'
+            },
             vendorcss: {
                 src: ['assets/css/vendor/**/*.css', '!assets/css/vendor/**/*.con.css'],
                 dest: 'assets/css/vendor/vendor.con.css'
@@ -79,6 +83,16 @@ module.exports = function(grunt) {
                     src: ['footer.php']
                 }
             }
+        },
+        replace: {
+            devcss: {
+                src: ['header.php'],
+                overwrite: true,
+                replacements: [{
+                    from: /style\.min\.css(.*)?\'/,
+                    to: 'style.con.css\''
+                }]
+            }
         }
     });
 
@@ -87,6 +101,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-cache-breaker');
+    grunt.loadNpmTasks('grunt-text-replace');
+
+    grunt.registerTask('dev', ['clean:vendorcss', 'clean:themecss', 'concat:devcss', 'replace:devcss']);
 
     grunt.registerTask('concatcss', ['clean:fonts', 'clean:vendorcss', 'clean:themecss', 'concat:fonts', 'concat:vendorcss', 'concat:themecss']);
     grunt.registerTask('minifycss', ['clean:fonts', 'clean:vendorcss', 'clean:themecss', 'concat:fonts', 'concat:vendorcss', 'concat:themecss', 'cssmin', 'cachebreaker:devcss']);
