@@ -1,8 +1,9 @@
 <?php
 
 // Plugins
-include 'plugins/bytbil-anlaggning/bytbil-anlaggning.php';
-include 'plugins/bytbil-erbjudanden/bytbil-erbjudanden.php';
+include 'plugins/bytbilcms-anlaggning/bytbilcms-anlaggning.php';
+include 'plugins/bytbilcms-erbjudanden/bytbilcms-erbjudanden.php';
+include 'plugins/bytbilcms-fordonsurval/bytbilcms-fordonsurval.php';
 include 'plugins/wp_bootstrap_navwalker.php';
 
 // Activates specified plugins on theme load
@@ -10,6 +11,7 @@ function bbtemplate_activate_plugins()
 {
     $plugins = array(
         'acf-image-crop-add-on/acf-image-crop.php', # ACF Image Crop
+        'acf-options-page/acf-options-page.php', # ACF Options Page
         'acf-repeater/acf-repeater.php', # ACF Repeater
         'advanced-custom-field-repeater-collapser/acf_repeater_collapser.php', # ACF Repeater Collapser
         'advanced-custom-fields/acf.php', # ACF
@@ -32,6 +34,7 @@ function bbtemplate_deactivate_plugins()
 {
     $plugins = array(
         'acf-image-crop-add-on/acf-image-crop.php', # ACF Image Crop
+        'acf-options-page/acf-options-page.php', # ACF Options Page
         'acf-repeater/acf-repeater.php', # ACF Repeater
         'advanced-custom-field-repeater-collapser/acf_repeater_collapser.php', # ACF Repeater Collapser
         'advanced-custom-fields/acf.php', # ACF

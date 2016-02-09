@@ -1,3 +1,5 @@
+<?php header('Access-Control-Allow-Origin: http://access.bytbil.com'); ?>
+
 <!DOCTYPE html>
 <html lang=""<?php if (is_user_logged_in()) {
     echo ' class="push-down-admin-menu"';

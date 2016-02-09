@@ -18,7 +18,9 @@ class AccessPackageShortcode extends ShortcodeBase
 
             $atts['assortment_id'] = $id;
 
-            $atts['assortment_alias'] = get_field('settings-bbalias','options');
+            $atts['assortment_alias'] = get_field('bytbil-alias','options');
+
+            var_dump('<pre>', get_field('bytbil-alias', 'options'), '</pre>');
 
             $assortment_string = get_field('assortment_string', $id);
             $atts['assortment_string'] = $assortment_string;
