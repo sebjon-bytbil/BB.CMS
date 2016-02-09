@@ -180,6 +180,10 @@ nav,
     z-index: 1001;
 }
 
+.push-down-admin-menu .navbar-fixed-top {
+    top: 52px;
+}
+
 .navbar-brand {
     display: inline-block;
     height: auto;

@@ -37,7 +37,7 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
 
         <!-- Main -->
-        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1454945005158'; ?>" rel="stylesheet">
+        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1455006817194'; ?>" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,45 +63,19 @@
                             <img src="<?php echo get_template_directory_uri() . '/assets/images/autoking-logotype-neg.png'; ?>" class="logotype" alt="Logotype" title="Logotype">
                         </a>
                     </div>
-                    <div class="navbar-offcanvas offcanvas canvas-slid" style="">
-                        <a class="navmenu-brand" href="#">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/images/bytbil-logotype.png'; ?>" alt="Logotype" title="Logotype">
-                        </a>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a href="#">Start</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bilar</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Nya bilar</a></li>
-                                    <li><a href="#">Begagnade bilar</a></li>
-                                    <li><a href="#">Transportbilar</a></li>
-                                    <li><a href="#">Sök bilar i lager</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tjänster</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Boka service</a></li>
-                                    <li><a href="#">Skadeverkstad</a></li>
-                                    <li><a href="#">Finansiering</a></li>
-                                    <li><a href="#">Försäkring</a></li>
-                                    <li><a href="#">Hyrbil</a></li>
-                                    <li><a href="#">Besiktning</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kontakt</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Kontakta oss</a></li>
-                                    <li><a href="#">Personal</a></li>
-                                    <li><a href="#">Jobba hos oss</a></li>
-                                    <li><a href="#">Nyheter</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
+
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'header-menu',
+                        'depth' => 2,
+                        'container' => 'div',
+                        'container_class' => 'navbar-offcanvas offcanvas canvas-slid',
+                        'menu_class' => 'nav navbar-nav navbar-right',
+                        'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                        'walker' => new wp_bootstrap_navwalker()
+                    ));
+                    ?>
+
                 </div>
             </nav>
 

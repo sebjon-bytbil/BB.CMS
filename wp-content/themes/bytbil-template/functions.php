@@ -3,6 +3,7 @@
 // Plugins
 include 'plugins/bytbil-anlaggning/bytbil-anlaggning.php';
 include 'plugins/bytbil-erbjudanden/bytbil-erbjudanden.php';
+include 'plugins/wp_bootstrap_navwalker.php';
 
 // Activates specified plugins on theme load
 function bbtemplate_activate_plugins()
@@ -47,3 +48,10 @@ function bbtemplate_deactivate_plugins()
     }
 }
 add_action('switch_theme', 'bbtemplate_deactivate_plugins');
+
+// Menus
+function bbtemplate_register_menus()
+{
+    register_nav_menu('header-menu', __('Main menu'));
+}
+add_action('init', 'bbtemplate_register_menus');
