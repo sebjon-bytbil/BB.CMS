@@ -1,8 +1,8 @@
 <?php
 
 // Plugins
-include 'plugins/bytbil-anlaggning/bytbil-anlaggning.php';
-include 'plugins/bytbil-erbjudanden/bytbil-erbjudanden.php';
+include 'plugins/bytbilcms-anlaggning/bytbilcms-anlaggning.php';
+include 'plugins/bytbilcms-erbjudanden/bytbilcms-erbjudanden.php';
 include 'plugins/wp_bootstrap_navwalker.php';
 
 // Activates specified plugins on theme load
