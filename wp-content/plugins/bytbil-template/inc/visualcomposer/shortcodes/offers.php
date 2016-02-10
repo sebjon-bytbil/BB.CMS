@@ -38,15 +38,17 @@ class OffersShortcode extends ShortcodeBase
             $columns = $atts['columns'];
 
             $relation = array('relation' => 'OR');
-            $posts_per_page = $atts['posts_per_page'];
+            if (isset($atts['posts_per_page']))
+                $posts_per_page = $atts['posts_per_page'];
+            else
+                $posts_per_page = '-1';
 
-            if($atts['posts_per_page'] == null) {
+            if ($posts_per_page == null)
                 $posts_per_page = "-1";
-            }
 
             // Set up the array for brand filtration
             $brand_query = array();
-            if($atts['offer_brands']) {
+            if (isset($atts['offer_brands'])) {
                 $offer_brands = explode(",", $atts['offer_brands']);
 
                 foreach($offer_brands as $offer_brand) {
@@ -64,7 +66,7 @@ class OffersShortcode extends ShortcodeBase
 
             // Set up the array for facility filtration
             $facility_query = array();
-            if($atts['offer_facilities']) {
+            if (isset($atts['offer_facilities'])) {
                 $offer_facilities = explode(",", $atts['offer_facilities']);
 
                 foreach($offer_facilities as $offer_facility) {
@@ -150,8 +152,6 @@ class OffersShortcode extends ShortcodeBase
                     // Image
                     $offer_image = get_field('offer-image');
                     $items[$i]['image'] = $offer_image['url'];
-                    $items[$i]['image_medium'] = $offer_image['sizes']['slideshow-medium'];
-                    $items[$i]['image_full'] = $offer_image['sizes']['slideshow-full'];
 
                     // Date
                     $items[$i]['date_stop'] = get_field('offer-date-stop');
@@ -159,11 +159,13 @@ class OffersShortcode extends ShortcodeBase
                     // Brands
                     $offer_brands = get_field('offer-brands');
                     $brands_list = array();
-                    foreach($offer_brands as $offer_brand) {
-                        if ($brand_dropdown) {
-                            array_push($brands, $offer_brand->post_title);
+                    if ($offer_brands) {
+                        foreach($offer_brands as $offer_brand) {
+                            if ($brand_dropdown) {
+                                array_push($brands, $offer_brand->post_title);
+                            }
+                            array_push($brands_list, $offer_brand->post_title);
                         }
-                        array_push($brands_list, $offer_brand->post_title);
                     }
                     $items[$i]['brands'] = $brands_list;
 

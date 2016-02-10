@@ -11,7 +11,9 @@
         <ul class="slides">
         <?php foreach ($slides as $slide) : ?>
             <li>
+            <?php if ($slide['link']) : ?>
                 <a href="<?php echo $slide['link_url']; ?>" target="<?php echo $slide['link_target']; ?>" title="<?php echo $slide['link_title']; ?>">
+            <?php endif; ?>
                     <img src="<?php echo $slide['image']; ?>">
 
                     <?php if ($slide['caption_content']) : ?>
@@ -30,7 +32,9 @@
                     </div>
                     <?php endif; ?>
 
+            <?php if ($slide['link']) : ?>
                 </a>
+            <?php endif; ?>
             </li>
         <?php endforeach; ?>
         </ul>

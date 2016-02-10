@@ -23,7 +23,7 @@ function bb_get_wysiwyg_styles()
     $style_urls = bb_add_wysiwyg_styles();
     $urls = null;
 
-    if (is_array($styles) && sizeof($styles) >= 1) {
+    if (isset($styles) && is_array($styles) && sizeof($styles) >= 1) {
         $urls = json_encode($style_urls);
     } else {
         $urls = $style_urls;

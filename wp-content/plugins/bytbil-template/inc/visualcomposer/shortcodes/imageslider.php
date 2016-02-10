@@ -32,8 +32,15 @@ class ImageSliderShortcode extends ShortcodeBase
         // Dates
         $show_slide = false;
         $todays_date = date('Y-m-d');
-        $start_date = self::Exists($slide['image_start_date'], $todays_date);
-        $stop_date = self::Exists($slide['image_stop_date'], $todays_date);
+        if (!isset($slide['image_start_date']))
+            $start_date = $todays_date;
+        else
+            $start_date = self::Exists($slide['image_start_date'], $todays_date);
+
+        if (!isset($slide['image_stop_date']))
+            $stop_date = $todays_date;
+        else
+            $stop_date = self::Exists($slide['image_stop_date'], $todays_date);
 
         if ($todays_date >= $start_date && $todays_date <= $stop_date) $show_slide = true;
         if (!$show_slide) return array();
@@ -46,40 +53,52 @@ class ImageSliderShortcode extends ShortcodeBase
         $processed_slide['image'] = $image_full[0];
 
         // Link
-        $link = vc_build_link($slide['image_link']);
-        $processed_slide['link_url'] = $link['url'];
-        $processed_slide['link_title'] = $link['title'];
-        $processed_slide['link_target'] = $link['target'];
+        $processed_slide['link'] = false;
+        if (isset($slide['image_link'])) {
+            if ($slide_image_link = self::Exists($slide['image_link'], false)) {
+                $processed_slide['link'] = true;
+                $link = vc_build_link($slide_image_link);
+                $processed_slide['link_url'] = $link['url'];
+                $processed_slide['link_title'] = $link['title'];
+                $processed_slide['link_target'] = $link['target'];
+            }
+        }
 
         // Overlay
-        $overlay_background_color = self::Exists($slide['image_overlay_color'], 'transparent') . ';';
-        $explode_overlay = explode(',', $overlay_background_color);
-        if ($explode_overlay[3] === '0.01);')
-            $overlay_background_color = 'transparent';
-        $processed_slide['overlay_background_color'] = 'background: ' . $overlay_background_color;
+        $processed_slide['overlay_background_color'] = 'background: transparent;';
+        if (isset($slide['image_overlay_color'])) {
+            $overlay_background_color = self::Exists($slide['image_overlay_color'], 'transparent') . ';';
+            $explode_overlay = explode(',', $overlay_background_color);
+            if ($explode_overlay[3] === '0.01);')
+                $overlay_background_color = 'transparent';
+            $processed_slide['overlay_background_color'] = 'background: ' . $overlay_background_color;
+        }
 
         // Caption
-        $caption_content = self::Exists($slide['image_caption_content'], false);
-        $processed_slide['caption_content'] = $caption_content;
+        $processed_slide['caption_content'] = false;
+        if (isset($slide['image_caption_content'])) {
+            $caption_content = self::Exists($slide['image_caption_content'], false);
+            $processed_slide['caption_content'] = $caption_content;
 
-        if ($caption_content) {
-            $caption_background_color = self::Exists($slide['image_caption_background_color'], 'transparent') . ';';
-            $caption_animation = self::Exists($slide['image_caption_animation'], 'none');
-            $caption_border = self::Exists($slide['image_caption_border'], '0');
-            if ($caption_border === '1') {
-                // Caption border color
-                $explode_caption_background_color = explode(',', $caption_background_color);
-                $explode_caption_background_color[3] = '0.75);';
-                $implode_caption_background_color = implode(',', $explode_caption_background_color);
-                $caption_border_color = '10px solid ' . $implode_caption_background_color;
-            } else {
-                $caption_border_color = 'none;';
+            if ($caption_content) {
+                $caption_background_color = self::Exists($slide['image_caption_background_color'], 'transparent') . ';';
+                $caption_animation = self::Exists($slide['image_caption_animation'], 'none');
+                $caption_border = self::Exists($slide['image_caption_border'], '0');
+                if ($caption_border === '1') {
+                    // Caption border color
+                    $explode_caption_background_color = explode(',', $caption_background_color);
+                    $explode_caption_background_color[3] = '0.75);';
+                    $implode_caption_background_color = implode(',', $explode_caption_background_color);
+                    $caption_border_color = '10px solid ' . $implode_caption_background_color;
+                } else {
+                    $caption_border_color = 'none;';
+                }
+                $caption_style = 'background:' . $caption_background_color . 'border:' . $caption_border_color;
+                $caption_position = self::Exists($slide['image_caption_position'], 'center');
+                $processed_slide['caption_animation'] = $caption_animation;
+                $processed_slide['caption_style'] = $caption_style;
+                $processed_slide['caption_position'] = $caption_position;
             }
-            $caption_style = 'background:' . $caption_background_color . 'border:' . $caption_border_color;
-            $caption_position = self::Exists($slide['image_caption_position'], 'center');
-            $processed_slide['caption_animation'] = $caption_animation;
-            $processed_slide['caption_style'] = $caption_style;
-            $processed_slide['caption_position'] = $caption_position;
         }
         return $processed_slide;
     }
