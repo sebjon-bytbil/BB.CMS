@@ -1,3 +1,4 @@
+<?php if (!empty($slides)) : ?>
 <div class="bb-imageslider">
     <div class="bb-slideshow flexslider" id="slideshow-<?php echo $blockid; ?>"
         data-id="<?php echo $blockid; ?>"
@@ -41,3 +42,4 @@
     }
     </script>
 </div>
+<?php endif; ?>

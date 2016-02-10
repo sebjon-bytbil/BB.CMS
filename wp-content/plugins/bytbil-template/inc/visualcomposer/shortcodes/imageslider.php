@@ -42,6 +42,7 @@ class ImageSliderShortcode extends ShortcodeBase
 
         // Image
         $image_full = wp_get_attachment_image_src($slide['image_image'], 'full');
+        if (!$image_full) return array();
         $processed_slide['image'] = $image_full[0];
 
         // Link
@@ -67,10 +68,6 @@ class ImageSliderShortcode extends ShortcodeBase
             $caption_border = self::Exists($slide['image_caption_border'], '0');
             if ($caption_border === '1') {
                 // Caption border color
-                # This does nothing?
-                if (substr($caption_background_color, 0, 1) === '#')
-                    $caption_border_color = self::hex2rgba($caption_background_color);
-
                 $explode_caption_background_color = explode(',', $caption_background_color);
                 $explode_caption_background_color[3] = '0.75);';
                 $implode_caption_background_color = implode(',', $explode_caption_background_color);
@@ -105,6 +102,7 @@ class ImageSliderShortcode extends ShortcodeBase
 
         // Image
         $image = get_field('offer-image', $id);
+        if (!$image) return array();
         $processed_slide['image'] = $image['url'];
 
         // Link
@@ -157,7 +155,6 @@ class ImageSliderShortcode extends ShortcodeBase
 
     public function processData($atts)
     {
-        # New stuff
         $processed_slides = array();
 
         if (!empty($atts['slides'])) {
@@ -166,10 +163,14 @@ class ImageSliderShortcode extends ShortcodeBase
             foreach ($slides as $slide) {
                 switch ($slide['slide_type']) {
                     case 'image':
-                        array_push($processed_slides, self::build_image_slide($slide));
+                        $processed_slide = self::build_image_slide($slide);
+                        if (!empty($processed_slide))
+                            array_push($processed_slides, $processed_slide);
                         break;
                     case 'offer':
-                        array_push($processed_slides, self::build_offer_slide($slide));
+                        $processed_slide = self::build_offer_slide($slide);
+                        if (!empty($processed_slide))
+                            array_push($processed_slides, $processed_slide);
                         break;
                 }
             }
@@ -177,7 +178,6 @@ class ImageSliderShortcode extends ShortcodeBase
 
         $atts['slides'] = $processed_slides;
 
-        /*** SETTINGS ***/
         // Slider animation
         $slider_animation = self::Exists($atts['slider_effect'], 'fade');
         $atts['slider_effect'] = $slider_animation;
@@ -221,8 +221,6 @@ function bb_init_imageslider_shortcode()
             VCADMINURL . 'assets/css/vendor/jquery-ui.min.css'
         ),
         'params' => array(
-
-            # New stuff
             array(
                 'type' => 'param_group',
                 'param_name' => 'slides',
