@@ -42,7 +42,7 @@
 
 
     </div>
-    <!--<section id="by-bytbil" class="align-center">
+    <section id="by-bytbil" class="align-center">
 
             <hr class="light-hr full-width">
             <h4>Besök oss i Sociala Medier</h4>
@@ -52,17 +52,13 @@
             </ul>
             <hr class="light-hr full-width">
             <p class="small light opacity-50">Producerad av BytBil.com för BytBil CMS.</p>
-    </section>-->
+    </section>
 
 </footer>
 
 <div class="overlay"></div>
 
 <script src="<?php echo get_template_directory_uri() . '/assets/js/script.min.js?rel=1454678148544'; ?>"></script>
-
-<!--<script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDixaP9fTuykPIFu9A7Mgy4R8zuH6UpCFc&callback=initMap">
-    </script>-->
 
 <?php wp_footer(); ?>
 </body>
