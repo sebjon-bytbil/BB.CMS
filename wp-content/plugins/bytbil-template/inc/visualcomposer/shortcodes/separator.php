@@ -30,9 +30,6 @@ function bb_init_separator_shortcode()
         'category' => 'Innehåll'
     );
 
-    // Alter params filter
-    $map['params'] = apply_filters('bb_alter_separator_params', $map['params']);
-
     $vcSeparator = new SeparatorShortcode($map);
 }
 add_action('after_setup_theme', 'bb_init_separator_shortcode');

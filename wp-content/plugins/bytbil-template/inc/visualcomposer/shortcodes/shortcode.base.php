@@ -33,9 +33,10 @@
 
         public function SetDefaultTab()
         {
-            foreach ($this->vcMap["params"] as $key => $param) {
-                if(!isset($param['group'])){
-                    $param['group'] = 'Innehåll';
+            if (isset($this->vcMap['params']) && !is_null($this->vcMap['params'])) {
+                foreach ($this->vcMap['params'] as $key => $param) {
+                    if (!isset($param['group']))
+                        $param['group'] = 'Innehåll';
                 }
             }
         }

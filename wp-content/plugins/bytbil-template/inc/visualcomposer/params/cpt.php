@@ -36,7 +36,7 @@ function bb_param_cpt($settings, $value)
         }
 
         $output .= '<option value="' . $option_value . '"' . $selected . '>'
-            . $title_prefix . ' ' . $option_label . '</option>';
+            . (isset($title_prefix) ? $title_prefix : '') . ' ' . $option_label . '</option>';
     }
 
     $output .= '</select>';
