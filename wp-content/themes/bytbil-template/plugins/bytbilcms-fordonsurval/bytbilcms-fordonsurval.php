@@ -255,7 +255,7 @@ function bytbil_show_assortment($id)
     } else {
         $settingspage = null;
     }
-    $assortment_alias = get_field('sitesetting-account-bbalias', $settingspage->ID);
+    $assortment_alias = get_field('bytbil-alias', 'options');
     $assortment_string = get_field('assortment_string', $id);
     $assortment_page = get_field('assortment_page', $id);
     $assortment_path = get_field('assortment_path', $id);

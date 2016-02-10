@@ -1,4 +1,43 @@
 <?php
+if(function_exists("register_field_group"))
+{
+    register_field_group(array (
+        'id' => 'acf_installningar',
+        'title' => 'Inställningar',
+        'fields' => array (
+            array (
+                'key' => 'field_56b9df118c3c5',
+                'label' => 'BytBil-alias',
+                'name' => 'bytbil-alias',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'options_page',
+                    'operator' => '==',
+                    'value' => 'acf-options',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+}
 require_once('shortcode.base.php');
 
 /**
@@ -19,8 +58,6 @@ class AccessPackageShortcode extends ShortcodeBase
             $atts['assortment_id'] = $id;
 
             $atts['assortment_alias'] = get_field('bytbil-alias','options');
-
-            var_dump('<pre>', get_field('bytbil-alias', 'options'), '</pre>');
 
             $assortment_string = get_field('assortment_string', $id);
             $atts['assortment_string'] = $assortment_string;
