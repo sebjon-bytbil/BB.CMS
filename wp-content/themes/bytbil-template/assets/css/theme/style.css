@@ -184,6 +184,10 @@ nav,
     top: 52px;
 }
 
+.push-down-admin-menu body.compose-mode .navbar-fixed-top {
+    top: 0;
+}
+
 .navbar-brand {
     display: inline-block;
     height: auto;
@@ -440,35 +444,45 @@ nav,
     display: table-cell;
 }
 
-.vertical-align.top {
-    vertical-align: top;
+.horizontal-align {
+    display: table;
 }
 
-.vertical-align.bottom {
-    vertical-align: bottom;
-}
-
-.vertical-align.middle {
+.vertical-align.center,
+.vertical-align.left,
+.vertical-align.right {
     vertical-align: middle;
 }
 
-.horizontal-align {
-    float: none;
-    display: table;
+.vertical-align.top-center,
+.vertical-align.top-left,
+.vertical-align.top-right {
+    vertical-align: top;
 }
 
-.horizontal-align.left {
+.vertical-align.bottom-center,
+.vertical-align.bottom-left,
+.vertical-align.bottom-right {
+    vertical-align: bottom;
+}
+
+.vertical-align.center .horizontal-align,
+.vertical-align.top-center .horizontal-align,
+.vertical-align.bottom-center .horizontal-align {
+    float: none;
+    margin: 0 auto;
+}
+
+.vertical-align.left .horizontal-align,
+.vertical-align.top-left .horizontal-align,
+.vertical-align.bottom-left .horizontal-align {
     float: left;
 }
 
-.horizontal-align.right {
+.vertical-align.right .horizontal-align,
+.vertical-align.top-right .horizontal-align,
+.vertical-align.bottom-right .horizontal-align {
     float: right;
-}
-
-.horizontal-align.middle {
-    float: none;
-    margin: 0 auto;
-    display: table;
 }
 
 .caption-contents {

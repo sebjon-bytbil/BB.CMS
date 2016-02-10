@@ -248,22 +248,6 @@ if (function_exists('register_field_group')) {
                 'step' => '',
             ),
             array(
-                'key' => 'field_541d56c3c103ka',
-                'label' => 'Täck bild med textrutan',
-                'name' => 'offer-caption-cover',
-                'type' => 'radio',
-                'instructions' => 'Välj om textrutan skall täcka hela bilden.',
-                'column_width' => '',
-                'choices' => array(
-                    'false' => 'Nej',
-                    'true' => 'Ja',
-                ),
-                'other_choice' => 0,
-                'save_other_choice' => 0,
-                'default_value' => 'false',
-                'layout' => 'horizontal',
-            ),
-            array(
                 'key' => 'field_541d56c3c104k',
                 'label' => 'Animera textrutan',
                 'name' => 'offer-caption-animation',
