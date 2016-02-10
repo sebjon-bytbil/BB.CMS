@@ -11,7 +11,7 @@ var imageslider = {
     },
 
     animate_slideshow: function(slider, when, animationspeed) {
-        var current_caption = jQuery(slider).find('.flex-active-slide .caption');
+        var current_caption = jQuery(slider).find('.flex-active-slide .caption-contents');
         var animation = jQuery(current_caption).data('animation');
 
         if (when === 'start' || when === 'after') {
@@ -99,17 +99,11 @@ var imageslider = {
                 }
             };
 
-            if (controls === 'thumbs') {
-                sliderData.sync = '#slideshow-' + id;
-                sliderData.controlNav = false;
-                sliderData.animationLoop = true;
-                sliderData.itemWidth = thumbnailsize;
-                sliderData.itemMargin = 0;
-                sliderData.asNavFor = '#slideshow-' + id;
-            } else {
+            if (controls == true)
                 sliderData.controlNav = true;
-                sliderData.animationLoop = true;
-            }
+            else
+                sliderData.controlNav = false;
+            sliderData.animationLoop = true;
 
             slideshow.flexslider(sliderData);
         });
