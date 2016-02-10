@@ -32,16 +32,21 @@ function vc_load_custom_admin_css()
 add_action('admin_enqueue_scripts', 'vc_load_custom_admin_css');
 
 /**
- * Removes specified params from row element
+ * Removes specified params from standard Visual Composer elements
  */
-function vc_alter_row_params()
+function vc_alter_standard_params()
 {
+    // Row
     vc_remove_param('vc_row', 'parallax');
     vc_remove_param('vc_row', 'parallax_image');
     vc_remove_param('vc_row', 'el_id');
     vc_remove_param('vc_row', 'el_class');
+
+    // Btn
+    vc_remove_param('vc_btn', 'css_animation');
+    vc_remove_param('vc_btn', 'el_class');
 }
-add_action('init', 'vc_alter_row_params');
+add_action('init', 'vc_alter_standard_params');
 
 /**
  * Removes items from array, based on param_name.

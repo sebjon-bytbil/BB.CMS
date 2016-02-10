@@ -9,7 +9,6 @@ function vc_remove_standard_elements()
         vc_remove_element('vc_facebook');
         vc_remove_element('vc_accordion');
         vc_remove_element('vc_basic_grid');
-        vc_remove_element('vc_btn');
         vc_remove_element('vc_button');
         vc_remove_element('vc_button2');
         vc_remove_element('vc_carousel');
