@@ -1,0 +1,8 @@
+/**
+ * Alterations to standard Visual Composer elements
+ */
+
+/* WP Text */
+.wpb_wrapper .textwidget {
+    padding: 0 10px;
+}

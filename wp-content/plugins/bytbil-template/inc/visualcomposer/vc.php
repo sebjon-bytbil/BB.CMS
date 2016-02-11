@@ -21,6 +21,15 @@ include('shortcodes/offers.php'); # Erbjudanden
 include('shortcodes/map.php'); # Karta
 
 /**
+ * Sets the default directory for VC to check for templates
+ */
+function vc_default_template_path()
+{
+    vc_set_shortcodes_templates_dir(VCADMINPATH . 'templates/vc_standard');
+}
+add_action('init', 'vc_default_template_path');
+
+/**
  * Adds custom CSS to Visual Composer
  */
 function vc_load_custom_admin_css()
@@ -33,7 +42,7 @@ add_action('admin_enqueue_scripts', 'vc_load_custom_admin_css');
 /**
  * Removes specified params from standard Visual Composer elements
  */
-function vc_alter_standard_params()
+function vc_remove_standard_params()
 {
     // Row
     vc_remove_param('vc_row', 'parallax');
@@ -45,8 +54,29 @@ function vc_alter_standard_params()
     vc_remove_param('vc_btn', 'css_animation');
     vc_remove_param('vc_btn', 'el_class');
 }
-add_action('init', 'vc_alter_standard_params');
+add_action('init', 'vc_remove_standard_params');
 
+/**
+ * Adds specified params to standard Visual Composer elements
+ */
+function vc_add_standard_params()
+{
+    // Wrapper checkbox
+    $wrapper = array(
+        'type' => 'checkbox',
+        'heading' => 'Wrapper',
+        'param_name' => 'wrapper',
+        'default_value' => 'false',
+        'value' => array(
+            'Yes' => 'true'
+        ),
+        'description' => 'Flytta Design Options CSS till inner wrapper.'
+    );
+    vc_add_param('vc_column', $wrapper);
+}
+add_action('init', 'vc_add_standard_params');
+
+/****** REMOVE EVERYTHING BELOW HERE?! ******/
 /**
  * Removes items from array, based on param_name.
  *
