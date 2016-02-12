@@ -23,6 +23,10 @@ class OpenHoursShortcode extends ShortcodeBase
                     $open_hours[$i]['department'] = $department['facility-department'];
                     $open_hours[$i]['open_hours'] = $department['facility-department-openhours'];
                 }
+
+                $amount = count($open_hours);
+                $bootstrap = 12 / $amount;
+                $atts['bootstrap'] = $bootstrap;
             } else {
                 $open_hours = false;
             }
@@ -31,10 +35,6 @@ class OpenHoursShortcode extends ShortcodeBase
         }
 
         $atts['open_hours'] = $open_hours;
-
-        $accordion = self::Exists($atts['show_as_accordion'], false) == 1 ? true : false;
-        $atts['show_as_accordion'] = $accordion;
-
         return $atts;
     }
 }
@@ -59,17 +59,7 @@ function vc_init_openhours_shortcode()
                 'placeholder' => 'Välj anläggning',
                 'value' => '',
                 'description' => 'Välj vilken anläggnings öppettider du vill visa.'
-            ),
-            array(
-                'type' => 'checkbox',
-                'heading' => 'Visa som accordion',
-                'param_name' => 'show_as_accordion',
-                'description' => 'Bocka i om du vill visa öppettiderna som en accordion.',
-                'value' => array(
-                    'Ja' => '1'
-                )
-            ),
-            //array(
+            )
         )
     );
 

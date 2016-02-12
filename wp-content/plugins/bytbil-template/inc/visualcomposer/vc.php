@@ -22,7 +22,7 @@ include('shortcodes/separator.php'); # Avskiljare
 include('shortcodes/imageslider.php'); # Bildspel
 include('shortcodes/offers.php'); # Erbjudanden
 include('shortcodes/map.php'); # Karta
-include('shortcodes/icons.php');
+include('shortcodes/openhours.php'); # Öppettider
 
 /**
  * Sets the default directory for VC to check for templates

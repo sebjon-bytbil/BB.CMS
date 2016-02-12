@@ -28,7 +28,7 @@ function something()
         'type' => 'iconpicker',
         'heading' => __( 'Icon', 'js_composer' ),
         'param_name' => 'i_icon_ionicons',
-       'settings' => array(
+        'settings' => array(
             'emptyIcon' => false,
             'type' => 'ionicons',
             'source' => require_once('icons/ionicons.php')
