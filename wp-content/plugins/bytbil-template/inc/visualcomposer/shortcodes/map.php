@@ -121,8 +121,12 @@ class MapShortcode extends ShortcodeBase
         $controls = self::Exists($atts['controls'], '0');
         $atts['controls'] = $controls;
 
-        $height = self::Exists($atts['height'], '300');
-        $atts['height'] = $height;
+        if (isset($atts['height'])) {
+            $height = self::Exists($atts['height'], '300');
+            $atts['height'] = $height;
+        } else {
+            $atts['height'] = 580;
+        }
 
         return $atts;
     }
