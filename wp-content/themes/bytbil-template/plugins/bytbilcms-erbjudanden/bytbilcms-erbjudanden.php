@@ -21,7 +21,7 @@ function cptui_register_my_cpt_offer()
             'hierarchical' => false,
             'rewrite' => array('slug' => 'erbjudande', 'with_front' => false),
             'query_var' => true,
-            'supports' => array('title', 'revisions'),
+            'supports' => array('title', 'revisions', 'editor'),
             'labels' => array(
                 'name' => 'Erbjudande',
                 'singular_name' => 'Erbjudande',
