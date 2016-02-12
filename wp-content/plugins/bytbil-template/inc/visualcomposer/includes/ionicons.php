@@ -28,20 +28,10 @@ function something()
         'type' => 'iconpicker',
         'heading' => __( 'Icon', 'js_composer' ),
         'param_name' => 'i_icon_ionicons',
-        'settings' => array(
+       'settings' => array(
             'emptyIcon' => false,
             'type' => 'ionicons',
-            'source' => array(
-                array(
-                    'ion ion-alert' => 'Alert'
-                ),
-                array(
-                    'ion ion-alert-circled' => 'Alert Circled'
-                ),
-                array(
-                    'ion ion-android-add' => 'Android Add'
-                )
-            )
+            'source' => require_once('icons/ionicons.php')
         ),
         'dependency' => array(
             'element' => 'i_type',
