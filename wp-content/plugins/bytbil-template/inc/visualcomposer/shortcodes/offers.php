@@ -16,9 +16,6 @@ class OffersShortcode extends ShortcodeBase
         $brand_dropdown = (self::Exists($atts['brand_dropdown']) == '1') ? true : false;
         $atts['brand_dropdown'] = $brand_dropdown;
 
-        $all_link = (self::Exists($atts['link_all_offers']) == '1') ? true : false;
-        $atts['link_all_offers'] = $all_link;
-
         if ($atts['offers_choice'] == 'all') {
 
             $show_as_slideshow = (self::Exists($atts['show_as_slideshow']) == '1') ? true : false;
@@ -360,16 +357,7 @@ function bb_init_offers_shortcode()
                 'value' => array(
                     'Ja' => '1'
                 )
-            ),
-           array(
-               'type' => 'checkbox',
-               'heading' => 'Länka till alla erbjudanden',
-               'param_name' => 'link_all_offers',
-               'description' => 'Bocka i om vill visa en länk till alla erbjudanden.',
-               'value' => array(
-                   'Ja' => '1'
-               )
-           )
+            )
         )
     );
 

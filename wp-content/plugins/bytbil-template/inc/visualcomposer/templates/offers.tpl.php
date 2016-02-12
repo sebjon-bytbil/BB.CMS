@@ -18,13 +18,6 @@
 
     <div class="clearfix"></div>
 
-<?php if ($link_all_offers) : ?>
-    <div>
-        <a href="#" class="button default">Se alla erbjudanden</a>
-    </div>
-    <div class="clearfix"></div>
-<?php endif; ?>
-
 </div>
 
 <?php endif; ?>
