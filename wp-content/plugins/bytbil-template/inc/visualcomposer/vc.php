@@ -5,6 +5,9 @@ define('VCADMINURL', plugin_dir_url(__FILE__));
 
 include('includes/remove-standard-elements.php');
 
+// Icons
+include('includes/ionicons.php');
+
 // Custom params
 include('params/cpt.php');
 include('params/cptlist.php');
@@ -19,6 +22,7 @@ include('shortcodes/separator.php'); # Avskiljare
 include('shortcodes/imageslider.php'); # Bildspel
 include('shortcodes/offers.php'); # Erbjudanden
 include('shortcodes/map.php'); # Karta
+include('shortcodes/icons.php');
 
 /**
  * Sets the default directory for VC to check for templates
@@ -36,6 +40,8 @@ function vc_load_custom_admin_css()
 {
     wp_register_style('vc_custom_admin_css', VCADMINURL . 'assets/css/vc_admin.css', false, '1.0.0');
     wp_enqueue_style('vc_custom_admin_css');
+    wp_register_style('ionicons_admin', VCADMINURL . 'assets/css/ionicons.min.css', false, '1.0.0');
+    wp_enqueue_style('ionicons_admin');
 }
 add_action('admin_enqueue_scripts', 'vc_load_custom_admin_css');
 
@@ -53,6 +59,8 @@ function vc_remove_standard_params()
     // Btn
     vc_remove_param('vc_btn', 'css_animation');
     vc_remove_param('vc_btn', 'el_class');
+
+    wp_register_style('ionicons', VCADMINURL . 'assets/css/ionicons.min.css', false, '1.0.0');
 }
 add_action('init', 'vc_remove_standard_params');
 
