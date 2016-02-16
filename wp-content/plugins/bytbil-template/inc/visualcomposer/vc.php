@@ -21,6 +21,7 @@ include('params/wysiwyg.php');
 include('shortcodes/accordion.php'); # Accordion
 include('shortcodes/separator.php'); # Avskiljare
 include('shortcodes/imageslider.php'); # Bildspel
+include('shortcodes/breadcrumbs.php'); # Breadcrumbs
 include('shortcodes/offers.php'); # Erbjudanden
 include('shortcodes/iframe.php'); # Iframe
 include('shortcodes/map.php'); # Karta
