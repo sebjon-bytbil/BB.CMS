@@ -13,6 +13,7 @@ include('params/cpt.php');
 include('params/cptlist.php');
 include('params/datepicker.php');
 include('params/map.php');
+include('params/multiselect.php');
 include('params/pages.php');
 include('params/radio.php');
 include('params/wysiwyg.php');

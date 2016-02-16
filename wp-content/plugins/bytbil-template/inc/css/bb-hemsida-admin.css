@@ -103,6 +103,11 @@ a:hover {
     content: "\f212";
 }
 
+#adminmenu #menu-posts-brand .wp-menu-image:before {
+    font-family: ionicons;
+    content: "\f279";
+}
+
 /* Top Admin Bar */
 html.wp-toolbar {
     padding-top: 70px;
