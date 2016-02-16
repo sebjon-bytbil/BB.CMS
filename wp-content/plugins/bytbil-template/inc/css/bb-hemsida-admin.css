@@ -82,6 +82,27 @@ a:hover {
     padding: 5px 15px 6px;
 }
 
+/* Admin Menu */
+#adminmenu #toplevel_page_nav-menus .wp-menu-image:before {
+    font-family: ionicons;
+    content: "\f394";
+}
+
+#adminmenu #menu-posts-facility .wp-menu-image:before {
+    font-family: ionicons;
+    content: "\f448";
+}
+
+#adminmenu #menu-posts-offer .wp-menu-image:before {
+    font-family: ionicons;
+    content: "\f2ab";
+}
+
+#adminmenu #menu-posts-employee .wp-menu-image:before {
+    font-family: ionicons;
+    content: "\f212";
+}
+
 /* Top Admin Bar */
 html.wp-toolbar {
     padding-top: 70px;
