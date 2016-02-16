@@ -16,6 +16,7 @@ function bbtemplate_activate_plugins()
         'advanced-custom-fields/acf.php', # ACF
         'bytbil-template/bytbil-template.php', # BytBil Mallsidor
         'js_composer/js_composer.php', # Visual Composer
+        'ninja-forms/ninja-forms.php', # Ninja Forms
         'wp-media-folder/wp-media-folder.php' # WP Media Folder
     );
 
@@ -38,6 +39,7 @@ function bbtemplate_deactivate_plugins()
         'advanced-custom-fields/acf.php', # ACF
         'bytbil-template/bytbil-template.php', # BytBil Mallsidor
         'js_composer/js_composer.php', # Visual Composer
+        'ninja-forms/ninja-forms.php', # Ninja Forms
         'wp-media-folder/wp-media-folder.php' # WP Media Folder
     );
 

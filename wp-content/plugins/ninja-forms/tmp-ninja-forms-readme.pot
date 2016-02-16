@@ -1,0 +1,2210 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Ninja Forms"
+msgstr ""
+
+#. Short description.
+msgid "Create forms and manage submissions easily with a simple drag and drop interface. Contact forms, subscription forms, or any other form for WordPress."
+msgstr ""
+
+#. Found in description header.
+msgid "Ninja Forms also has a complete library of add-ons to take your forms to new heights:"
+msgstr ""
+
+#. Found in description header.
+msgid "Become a Ninja Forms Member"
+msgstr ""
+
+#. Found in description header.
+msgid "Demo Site"
+msgstr ""
+
+#. Found in description header.
+msgid "For Developers"
+msgstr ""
+
+#. Found in description list item.
+msgid "Over a dozen types of fields you can add to your form."
+msgstr ""
+
+#. Found in description list item.
+msgid "Absolutely no limitations to the number of forms, fields, emails, actions, or submissions."
+msgstr ""
+
+#. Found in description list item.
+msgid "Custom input masks allow you to restrict user input in your forms for things like phone numbers, currency, and dates."
+msgstr ""
+
+#. Found in description list item.
+msgid "Manage, Edit, and Export form user submissions."
+msgstr ""
+
+#. Found in description list item.
+msgid "Save fields as favorites and re-use them in multiple forms."
+msgstr ""
+
+#. Found in description list item.
+msgid "Export and Import forms and favorite fields."
+msgstr ""
+
+#. Found in description list item.
+msgid "Set required fields."
+msgstr ""
+
+#. Found in description list item.
+msgid "Add a datepicker to text fields."
+msgstr ""
+
+#. Found in description list item.
+msgid "Email form results to any number of pre-determined email addresses, as well as specific messages to the user filling out the form."
+msgstr ""
+
+#. Found in description list item.
+msgid "Customize form emails with the WordPress editor."
+msgstr ""
+
+#. Found in description list item.
+msgid "4 Anti-Spam options."
+msgstr ""
+
+#. Found in description list item.
+msgid "Extremely developer friendly."
+msgstr ""
+
+#. Found in description list item.
+msgid "Submit your form by reloading the page or asynchronously with AJAX."
+msgstr ""
+
+#. Found in description list item, changelog list item.
+msgid "Please note that if you are using a version of PHP lower than 5.3, you may experience some problems using AJAX Submissions. These can be minimized by using simple success/error messages without any quotes or special characters."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Ninja Forms is the easiest way to build any form you need for your WordPress website. No longer mess with code or worry about made-up limitations. Create the form you want, when you want with a simple drag and drop interface provided by the very powerful Ninja Forms framework."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Features of Ninja Forms include, but are not limited to:</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "More information at <a href=\"https://ninjaforms.com/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Home+Page\">ninjaforms.com</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[youtube https://www.youtube.com/watch?v=DFAz8kKVi08]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Increase form conversions</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"https://ninjaforms.com/extensions/mult-part-forms/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Multi-Part+Forms\">Breaking forms into smaller parts</a> or <a href=\"https://ninjaforms.com/extensions/save-progress/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Save+Progress\">allowing users to save and return</a> make longer forms less intimidating. <a href=\"https://ninjaforms.com/extensions/conditional-logic/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Conditional+Logic\">Conditional Logic</a> will allow you to show field only to users who need them and send emails or process actions only under specific conditions."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Beautiful forms convert better than crowded unorganized forms. While Ninja Forms looks great on any well styled theme and is easy to style further if your are comforatble with CSS, <a href=\"https://ninjaforms.com/extensions/layout-styles/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Layout+and+Styles\">Layout and Styles</a> makes it easy to create columns for your forms as well as style specific elements."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Build your mailing lists with ease</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Use the mailing list tool of your choice. <a href=\"https://ninjaforms.com/extensions/mail-chimp/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=MailChimp\">MailChimp</a>, <a href=\"https://ninjaforms.com/extensions/constant-contact/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Constant+Contact\">Constant Contact</a>, <a href=\"https://ninjaforms.com/extensions/campaign-monitor/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Campaign+Monitor\">Campaign Monitor</a>, <a href=\"//ninjaforms.com/extensions/emma/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Emma\">Emma</a>, <a href=\"https://ninjaforms.com/extensions/aweber/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Aweber\">Aweber</a>, <a href=\"https://ninjaforms.com/extensions/mailpoet/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=MailPoet\">MailPoet</a>, <a href=\"https://ninjaforms.com/extensions/icontact/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=iContact\">iContact</a>, <a href=\"https://ninjaforms.com/extensions/getresponse/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=GetResponse\">GetResponse</a>, <a href=\"https://ninjaforms.com/extensions/cleverreach/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=CleverReach\">CleverReach</a>, <a href=\"https://ninjaforms.com/extensions/sendy/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Sendy\">Sendy</a>, and <a href=\"https://ninjaforms.com/extensions/mad-mimi/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Mad+Mimi\">Mad Mimi</a> are all supported for your list building needs."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Easily collect payments</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Ninja Forms gives you the ability to collect payments through <a href=\"https://ninjaforms.com/extensions/paypal-express/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=PayPal+Express\">PayPal Express</a>, <a href=\"https://ninjaforms.com/extensions/stripe/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Stripe\">Stripe</a>, or <a href=\"https://ninjaforms.com/extensions/elavon/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Elavon\">Elavon</a>. More payment gateways coming."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>All the best customer relationship management integrations</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "When someone fills out your form the most natural thing to do is send their data directly to your favorite CRM. Ninja Forms makes this easy with plenty of CRM integrations such as <a href=\"https://ninjaforms.com/extensions/salesforce-crm/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=SalesForce+CRM\">SalesForce</a>, <a href=\"https://ninjaforms.com/extensions/batchbook-crm/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Batchbook+CRM\">Batchbook</a>, <a href=\"https://ninjaforms.com/extensions/zoho-crm/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Zoho+CRM\">Zoho</a>, <a href=\"https://ninjaforms.com/extensions/insightly-crm/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Insightly+CRM\">Insightly</a>, <a href=\"https://ninjaforms.com/extensions/capsule-crm/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Capsule+CRM\">Capsule</a>, etc."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Send data to all your favorite productivity tools with the click of a submit button</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "We love and use tools like <a href=\"https://ninjaforms.com/extensions/slack/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Slack\">Slack</a>, <a href=\"https://ninjaforms.com/extensions/trello/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Trello\">Trello</a>, and <a href=\"https://ninjaforms.com/extensions/zapier/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Zapier\">Zapier</a>. These tools help our very own team build Ninja Forms so it makes sense that we would share them with you."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Even if your team needs a support form where your customers can ask for help, Ninja Forms integrates with <a href=\"https://ninjaforms.com/extensions/help-scout/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Help+Scout\">Help Scout</a> to make this a delightful experience."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Even more add-ons available right now</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "With over 40 add-ons available and new ones being added regularly, it’s likely we have everything you’ll ever need. <a href=\"https://ninjaforms.com/extensions/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Add-Ons\">Check them all out here.</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Want access to everything we have and everything we release in the future? Want the ultimate form creation toolkit? That and so much more is exactly what we offer through our Developer Membership."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"https://ninjaforms.com/extensions/ninja-forms-membership-bundle/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Developer+Membership\">Find our more about the Ninja Forms Developer Membership here.</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Please feel free to visit our <a href=\"http://demo.ninjaforms.com?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme\">demo site</a> where you can test the features of Ninja Forms and all of our extensions."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The Ninja Forms framework is on <a href=\"https://github.com/wpninjas/ninja-forms\">GitHub</a>! If you're a developer and want to help make Ninja Forms better, check it out. It's also a great resource for developers who are interested in creating add-ons for our online store."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "If you're a developer and would like to talk about creating some premium extensions for Ninja Forms, here is everything you need to know."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the <code>ninja-forms</code> directory to your <code>/wp-content/plugins/</code> directory"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the 'Plugins' menu in WordPress"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Visit the 'Forms' menu item in your admin sidebar"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "This section describes how to install the plugin and get it working."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Shortcodes have been re-implemented. They are used like so: [ninja_form id=3] where 3 is the ID number of the form you want to display."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a security issue that could allow macros to be ran in Excel if a CSV with malicious content was exported. Thanks to Smit B. Shah and Hely H. Shah for the report."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause bulk downloads to fail."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Google reCaptcha should now work properly with AJAX submissions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Calculations in regions that don't use decimals as separators shouldn't fail."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent the metaboxes from being dragged properly on the post/page edit screen."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed a possible security vulnerability."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The \"Text\" tab toolbar should no longer disappear on the post/page edit screen."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The \"Download All Submissions\" button should now function properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Honeypot fields are now added by default to help protect your forms from spam."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Legacy honeypot fields should display properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a form easily while editing a post, page, or custom post type using a form selector."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a minor security issue within the WordPress admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a few PHP notices within the WordPress admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added built-in support for Google reCAPTCHA."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added South Sudan to the country list."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause multiple forms on a page to add an empty DIV when one was successfully completed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ampersands (&amp;) should now encode properly when using them in the redirect action."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The \"Today's Date\" option should now use the WordPress time rather than GMT."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a possible cross-site scripting issue. We recommend updating as soon as possible to this version."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added RTL support for radio and checkbox wraps with left or right labels"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed usage of PHP session variables in favour of an implementation of WP Session Manager."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The use of WP Session manager should fix any bugs related to session_start() or headers already sent messages related to Ninja Forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause form caching to prevent new form settings from appearing."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Hardened form display to protect against certain cross-site scripting methods."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent licenses from being activated properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Submission #'s should now be properly assigned."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with major calculations that could cause them to fail in some situations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with form caching that could cause fatal errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause issues using Ninja Forms with a multi-site installation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause the \"download all submissions\" button to fail."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent licenses from being deactivated properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some styling issues with the password field."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several PHP notices."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new upgrade handler to make upgrading a smoother, more stable process."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for European thousands separators in currency masks and calculations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added form caching to speed up installations with large numbers of forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for using multi-select or checkbox lists as the recipient of email actions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a security vulnerability that could allow users to inject scripts if they were logged in as administrators."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The \"Download All\" button should now work properly for submissions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for populating a text or hidden field from a querystring."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a reset form conversions button to allow users to re-convert forms in the case of an error."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause forms to not submit properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause a PHP crash on earlier versions of PHP."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The user profile setting of \"Disable rich text editor\" should no longer cause problems when editing forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Credit Card errors should now show properly when submitting the form via AJAX."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The submission limit should now only count properly submitted forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with email fields and the inline label position."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause a crash with older versions of PHP."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a browser caching bug."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a possible, very minor security concern."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent field settings dropdowns from being clicked on in FireFox."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent the preview page from showing properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Deleting Ninja Forms from the plugins page should now work in all instances."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added placeholders for text fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prompt users to run unnecessary updates on their site."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Preview pages should now always display properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Success messages should now always be shown after submission properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause a PHP notice to show in placeholders."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause forms not to display properly when added via the \"append to page\" option."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Simplified the form creation interface by adding a \"Build Your Form\" tab, an \"Emails &amp; Actions\" tab, and a \"Settings\" tab. All other tabs have been removed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Form Preview and Submissions are now buttons that can be clicked at any stage of editing a form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Field settings have been simplified by introducing a series of new, expandable settings sections. These sections house more advanced or less-common settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a major bug that could prevent longer forms from saving properly. Previous fixes required modifying a php.ini file."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Creating a new action should now show the proper saved message."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated the Ninja Forms translation file with several new strings and cleaned up existing strings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Modified the way that options are grabbed from the database to make them more effecient and prevent errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused post meta to be added to a post/page even if no form was selected."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug introduced in the previous version that could prevent javascript from working properly on the front-end."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause field settings to appear incorrectly on WordPress version 4.1."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fetching a form over AJAX from the frontend via the shortcode should now work properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented the NL translation from working properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed issues that could be caused by sending blank CC and BCC headers."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a rating request at the bottom of Ninja Forms pages in the admin area."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added filters for the datepicker args so that it is more easily customisable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause submissions to view improperly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Appending forms to a post or page from the post/page edit screen should now work properly in all instances."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Importing form from versions previous to 2.8 should no longer create a phantom email."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Importing or duplicating a form that has submissions shouldn't cause the sequential numbers for the new form to start with the same number."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "This version includes a fix for a potential security vulnerability for admin users."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that can throw JS errors if multiple forms are on the same page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed typos in the welcome screen."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "This version includes a fix to a security vulnerability. Please take the time to update to this version."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with conversions from older versions of Ninja Forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause two forms on the same page to behave improperly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Credit card field labels and descriptions can now be edited on the field settings tab."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with importing the initial contact form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "BCC and CC fields should now send to multiple addresses properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several instances where strings weren't internationalized properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The redirect notification type now works with AJAX enabled."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a security issue within the wp-admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The Custom First Option setting for country fields now works properly with required fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "BCC and CC fields should now work properly in all cases."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Negative numbers should be properly represented in emails when using calculation fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed errors with some internationalization strings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Deleting a form should now properly delete notifications attached to that form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed number field settings to allow non-integer step values."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new nf_init action that allows developers to run functions when Ninja Forms loads."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added hooks and filters to allow notifications to be more easily extended."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with converting notifications from previous versions of Ninja Forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-Added the password mismatch label to the label settings tab."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The [ninja_forms_all_fields] short code should now function properly in plain text emails."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Submitted forms that are set to clear upon completion should now properly re-populate default values that are based upon logged-in user information."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an issue with doubles slashes on Windows servers."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Importing forms should now work properly in all instances."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with notifications that could prevent notifciations from converting properly in some instances."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with changing email message content via the filter."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Properly included minified JS files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Version 2.8 fixes a minor security issue that could allow non-admins and other forms to delete Ninja Forms. This won't affect all users, but we encourage everyone to update."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Moving reply to, cc, and bcc to an advanced settings section for email notifications."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Any field can now be inserted into the from name, address, to, subject, reply to, cc, and bcc fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a custom short code parser that will prevent other plugins from tampering with email and success message ninja forms short codes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an issue where short codes were being parsed in the admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause phantom emails to be sent to users who filled out forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Settings labels should now populate correctly upon activation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New installs should not see upgrade notices."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Favourite fields can now be removed properly in all installations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed PHP notices."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause notification conversion to crash."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause emails to be sent to the user's email address, even if a notification wasn't active."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent emails from being sent if the message was empty."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with upgrades that caused submission conversion to fail."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a filter for success message notifications: nf_success_msg."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a filter for CSV exports after labels have been added but before fields: nf_subs_csv_label_array_before_fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Deprecated the old version of the success message filter."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New, simpler system for creating custom notifications."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Send any number of emails per form submission."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Easily redirect the user to a page or display a custom success message."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the \"Save Form Settings\" button to \"Save.\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixing a bug with editing submissions with specific field combinations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Submission CSS should now only enqueue on the submission page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with the submissions permissions filter. It should now function properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with some servers caused by calling the set_time_limit() function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The [nf_sub_seq_num] shortcode should now always function properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an invalid argument error when viewing a the submissions table."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Rich Text Editors should now render properly when they are added to a form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new filter to the admin menu capabilities. Deprecated older versions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "On the submissions table, the filter will now use the earliest date as the begin date."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to download all submissions for a particular form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a step processor that can be extended and used by developers."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added new extensions to the add-ons page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with success messages not being displayed for AJAX submissions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed HTML breaking issues with the Text field type when something other than div is selected"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause forms to stop working on Windows (IIS) servers."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Forms without errors or success messages should no longer see the \"response\" message div."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Portuguese translation files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Dutch translation files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused the text elements to be output with encoded html tags rather than the tags themselves."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused empty CSV files to be emailed to the admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "List item labels can now contain HTML."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an issue that could cause the submission values to appear as a widget on the submission edit screen."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause a direct download if the \"send CSV attachment\" was checked."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an issue with older versions of PHP and the round() function."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Submissions are now stored in a new database, making them easier to search, edit, and display."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "There are new methods for interacting with submissions, which can be found <a href=\"http://ninjaforms.com/documentation/developer-api/submissions/\">here</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "We're very excited about this new direction for Ninja Forms submissions, and we hope you enjoy using the new submissions system."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "See the plugin welcome screen for more details."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several bugs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a filter for setting which field types are shown the input limiter."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the header( 'Location....') php function with wp_redirect()."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause the required symbol to be added twice if the label position was set inside."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Wrapped the $post global in an if check to prevent errors on some WP pages."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Modified CSS styling slightly for default contact forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed CSS padding issues for some themes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with short codes on default values."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a PHP Notice related to WordPress version 3.9 and $wpdb-&gt;prepare()."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a Finnish Translation (Thanks to ottok)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added some CSS to make forms more responsive and cross browser compatible."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Modified the call to wp_editor on the Field Settings tab so that it is compatible with WordPress 3.9."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added more security to prevent forms from being spammed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added additional items to the system status page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a php notice that could occur when using the inside label position."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Calc fields that use advanced equations should now function properly when referencing other advanced calculation fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The \"Processing Message\" above the form has been removed in favour of changing the text of the submit button and disabling it."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "This change in processing notification will make it easier for users to see that a submission is being processed and prevent them from clicking the \"submit\" button again."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated the label of the \"Processing\" label to make it clearer."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a credit card field that can be enabled by extensions that need to use it."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug introduced in version 2.5.3 which prevented Sessions from starting properly on some server setups."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some PHP warnings/notices."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "List items should now properly escape html when displayed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent AJAX submissions from working properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed various bugs with the default label position. It should now always default to above."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause Admin emails to appear to have attachments when they didn't."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Required fields can now have a value of 0."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with list fields and calculations that could cause them not to pre-populate properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause incomplete submissions to show in the dashboard for those using the Save Progress extension or the Multi-Part Forms extension."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a major bug that removed the \"Number\" field."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Submission Limiting - Allows users to limit the number of submissions a form can receive."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Character Counts - Added a \"Character Count\" option to textboxes and textareas."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented the pagination from working on view submission pages."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with the default value filter."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented forms from showing when they were on the landing page of another form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused required fields to go unprocessed when extensions were deactivated."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused list fields to pre-populate incorrectly in some instances."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed some console logs that could cause crashes in Internet Explorer."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused forms to improperly clear when submitted."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented empty success messages from being saved."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add some CSS to help prevent theme from breaking left and right labels when they add display:block to the label element."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "All settings are now fetched via a proxy function."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a wrapper for the entire form display (and everything that goes with it)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused memory issues when a form has a large number of submissions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with the label inside position that generated a “call to member function…” error."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented tax totals from working properly with numbers with thousands separators."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented list importing from working with newly created list fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with list fields that prevented list options from being re-ordered immediately after being added to the form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Required fields that use the “inside” label position will now show the required symbol inside the field with the label."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the default value filter to respect fields that shouldn’t be processed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed code from the field class function that was specific to Conditional Logic. This code should be housed in the extension rather than the core plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented the Inside label position from working properly on form load."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an issue that could cause the conditional logic extension to function improperly on load."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "A new method for loading Ninja Forms for display has been created to decrease loading times. Users with extremely large forms (100+ fields) should see a marked improvement in loading speeds. If you use any Ninja Forms extensions, make sure that they are updated to the newest versions to take advantage of this new loading system. Developers can look for the $ninja_forms_loading class for more information about using this powerful new feature."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new Number field that requires users to enter a number. (Work is currently being done to make this requirement work with non-HTML5 compliant browers.)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented Custom default values from working with hidden fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Encoded HTML entities in the help hover so that double quotes don’t break anything."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Default label position is now above the element."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added filter 'ninja_forms_export_sub_pre_value' when exporting subs to access user_value before it is processed (stripslashes and if array implode_r)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused the Ninja Forms option on post/page edit to not save properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Simplified some CSS for the star rating field."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some 3.8 styling on modal boxes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a few typos."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a default success message to newly created forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Address fields should now how a specific class that can be targeted in JS."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Input masks should now work without causing Javascript errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "\"Back to submissions\" should now work in IE."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug in calc filters that could cause infinite loops."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add some CSS for 3.8 compatability."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed the \"Save Subs\" option. Now all submissions are saved by default. This can be changed by using a WordPress filter."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Moved the \"Forms\" admin menu up to the same section as posts and custom post types."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed some CSS selector weights ot make overriding a little easier."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the mask definition to be stored in a data-attribute rather than the field title."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the currency mask to use the WordPress defined thousands separator and decimal point."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented calculations from working properly in Mulit-Part Forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent success messages from showing properly in modal forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed up the extend page. Added some extensions and cleaned up CSS."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added url encoding to the form settings saved message so it was no longer without spaces."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed the get_subs function so that it works properly with dates in formats different than m/d/Y."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused response message fields to be output if multiple forms were on the same page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused hidden fields to not show up on the submission edit screen."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adding styling to admin metabox textareas so that they have a minimum size."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Saving a post/page should no longer create an empty Ninja Forms custom post meta."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the call to sys_get_temp_dir() to the WordPress get_temp_dir() when trying to create a CSV attachment."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new filter ninja_forms_email_all_fields_array to give users a way to remove unwanted data from being sent in emails."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Users can now add Calc values to their List Options import CSV."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented sidebars from saving properly on the Field Settings tab and producing a PHP warning."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Forms should now update their “Date Updated” status when a change is made."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a default, basic contact form that will be automatically created upon plugin activation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Optimized images to make load times faster."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed from underscores to dashes for proper class name of the required fields wrapper."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new default value for textboxes: Today's Date."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Increased the number of submissions viewable at once to 300 and 500."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor CSS adjustments for WP 3.8 compatibility."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented forms from populated correctly after they had been submitted. i.e. after missing required fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the way that Ninja Forms figures out what URL a form lives on."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The \"From Address\" used in admin emails can now be filtered using ninja_forms_admin_email_from."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The delimiter, new line marker, and byte order mark can now all be filtered. See includes/admin/export-subs.php for more information. (Thanks to Jörn Lund!)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed button colors on the submission editing page to be inline with WordPress standards."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented \"From Email\" and \"From Name\" from saving properly on the Form Settings page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Star Ratings fields can now be set to required. The user will be forced to enter at least one star."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed some PHP notices that could appear when using the widget."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The datepicker used in the Ninja Forms admin section should now respect the date settings on the Plugin Settings page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several minor bugs related to saving form fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new submit feature called \"Timed Submit.\" This new submit button will force users to wait a certain number of seconds before they can submit your form. Thanks helgatheviking!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved the Form Settings UI by adding a much-requested \"Email From Name\" field setting. You can use this to more easily define the name that emails appear to be from."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added an easier way for developers to troubleshoot JS errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The \"Use this as the From Email for Administrators...\" setting has been removed in favour of one labelled \"Set this as the reply-to email\" for the form. We think that this presents a clearer interface and is easier to understand."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented bulk actions from working on submissions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Duplicating a form should now properly change ninja_forms_field references in the admin and user email subjects."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a honeypot field for catching spam bots. Thanks helgatheviking!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The date input mask should now reflect the settings for date format."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a \"button\" option type to the admin metabox output."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the way that Ninja Forms attempts to get a form's URL to the wp_guess_url() function."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the option to give a field type a default label and default value when registering a field type."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a security-related bug that prevented pluagin and form settings from saving properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add smtp option output to System Status to assist in approved email issue troubleshooting."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a security-related bug that prevented new forms from being created."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added better input escaping to improve form security."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some minor bugs related to default values for hidden and textbox fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new resource that will allow users to quickly and easily add their pertinent system information when requesting support for Ninja Forms. The new option can be found underneath the Forms menu: System Status."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added new options to the default value setting: Post ID, Post Title, and Post URL."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the date format in ninja_forms_get_subs() to allow 24 hour date selection."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved performance with the MP6 plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented advanced calculations from working properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some bugs with the field descripition."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a message to the license tab if no extensions are installed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved the structure of metaboxes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a major bug that could prevent calculation fields from working properly when more than one calculation referenced the same field."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused calculation fields to work incorrectly with the Conditional Logic extension."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the \"visible\" HTML5 data attribute to fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed functions from core that were specific to the Conditional Logic extension."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Duplicated or imported forms that use the [ninja_forms_field] shortcode should now have their references automatically changed after duplication/import."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused the Total calculation field to work incorrectly with Tax and Subtotals."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a major bug that could cause calculation fields to not work when using the currencty input mask."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused special characters to appear incorrectly in List fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent forms from displaying properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several bugs that could prevent calculation fields from working properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several bugs that could cause calculation fields to show incorrect totals upon page load."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added files to core to make updating extensions easier for developers."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent the ninja_forms_field shortcode from being processed properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could prevent the list of fields from being attached to both user and admin emails."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new fields description option. Using the rich text editor add text or images to your common field types and display the before or after the field output or before or after the label."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ninja Forms form field values will no longer be available in a $_SESSION variable. Instead, a form's success page may use the global $ninja_forms_processing object to access submitted values."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed many previously untranslated strings. Big thanks to daveshine for the hard work in making Ninja Forms translation friendly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed all references to wpninjas.com to the new ninjaforms.com."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the option to duplicate a form from the \"All Forms\" list; simply select \"duplicate\" and a clone of your form will be added to the list."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to search the submission database by 'action.'"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several misspellings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added an extra check to required fields to make them more stable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Calculation fields should now work properly with currency masks."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Error messages should no longer appear on fields that shouldn't have errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Cleaned up the CSS."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the option to disable the \"add media\" button on the Textarea field."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved the back-end processing of Calculation fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new filter for the field wrapper: ninja_forms_display_field_wrap_class."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented Calculation fields from displaying properly in emails."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with list fields and calculations that caused the item label to be used rather than the calc value."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Importing forms with calculation fields should now work properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a few PHP notices. Thanks @mpeshev!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented Calculation fields from working properly with the Conditional Logic extension."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The invalid Email message label should now properly populate upon plugin activation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused the CSV files attached to admin emails to only contain the date."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added an \"alt\" tag to the loading ajax image."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the method by which JS events could be added before and after form submission. Previously, a proprietary function registration system was used. In this version, however, this system has been dropped in favor of the jQuery event method. Ninja Forms will now fire a custom event of \"beforeSubmit\" before a form is submitted. Returning false in a function handler on this event will cause submission to be cancelled. \"submitResponse\" is the custom event fired by Ninja Forms when a form has been submitted. See includes/js/dev/ninja-forms-display.js for details in the comments."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a credit card field that can be enabled by payment gateway developers."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to group user information fields by billing, shipping, or a custom group name. These are available with the get_current_info() method."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the email field so that validation works even if the field is not required."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Email validation should now work properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Preparing for the release of WordPress 3.6, changed the instances of .live() in Ninja Forms Javascript to .on()."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to make Country fields required."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to add a custom first option to the Country field."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented submissions from being edited if the label position was set to inside."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that generated a PHP Notice when adding new fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented ninja_forms_get_subs() from working properly when a field =&gt; value pair was sent."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Code cleanup."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added translation ability to many, many previously untranslatable strings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added an improved German translation file."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved the way that Ninja Forms handles translations so that translation files may be placed in the WP_LANG_DIR/ninja-forms/ directory rather than the main plugin directory. This will make them safe from plugin updates."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Thank you very much to David Decker for these changes!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Moved the Forms Setting metabox registration from 'init' to 'admin_init' so that it is only called on the admin-side."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add Danish translation files for Ninja Forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Sidebars and individual field settings should now remember their state (open or closed) upon page reload."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the new Calculation field. This field allows you to perform simple to complex mathematic operations, as well as collect payment data from the user."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the new Sub Total field. This calculation field allows you to collect payment data from the user."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the new Total field. This calculation field allows you to collect payment data from the user."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the new Tax field. This calculation field allows you to collect payment data from the user."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new sidebar to the field settings tab to hold the new Payment Fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added several new fields for capturing a user's personal information: First Name, Last Name, Address, City, State, Country, Postal Code, Email Address, Phone."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new sidebar to the field settings tab to hold the new Personal Information fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed the Defined Fields sidebar from the Field Settings tab."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Submit and Anti-Spam fields have been moved into the Template Fields sidebar."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented Text Layout Elements from showing properly on Multi-Part Forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a filter to the edit field LI label on the Field Settings tab."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a field label to the layout text element. This label will not be displayed on the front-end, but will allow users to organize their forms better by naming these sections so that they are not all labelled \"Text.\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrected several strings that weren't setup for translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Other minor bugfixes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a major bug that caused a php warning to appear when downloading CSV files and submitting forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Now includes a German translation. [Thanks to wp-buddy @ GitHub!]"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CSV files should now contain HTML rather than encoded HTML entities."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a major bug that prevented translated strings from actually being translated. [Thanks to wp-buddy @ GitHub!]"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented List Fields from working properly with Selected Defaults."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "If you are having issues with your Text fields displaying HTML code, please update to this version."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a widespread bug that caused the fields using Rich Text Editors to save encoded HTML rather than HTML."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented Multiselect and Checkbox list fields from re-populating properly when the page reloaded."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added two new filters that are ran when a submission is exported to CSV. ninja_forms_export_sub_label and ninja_forms_export_sub_value."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Moved the location of the ninja_forms_email_user_value filter to be more effective."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused the form settings tab to reload when a new form is created."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a fairly serious bug that could keep settings pages from saving properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented the submissions page from working properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The submissions page will now show the first form's submissions by default."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed the \"Inside\" label position for checkboxes and other elements that can't use this location."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The Favorite Field export will now display a message if no favorite fields are found."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the option to give a hidden field or textbox the default value of the logged-in user's ID."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused options to be shown and hidden improperly on the Form Settings page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "If you do not setup an email \"From Address\" or an \"Admin Mailto Address,\" Ninja Forms will automatically use the default WordPress admin email address."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with required fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that was causing wpautop() to be applied to non-HTML emails. (Special thanks to Just-Ghali via GitHub)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that was preventing the field settings page from working properly with lower screen resolutions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed several php notices."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new div that wraps all the fields when a form is displayed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that was causing two error messages to display below the Spam field if it were left empty."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bub with the new bulk list option CSV import."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to create list options with a CSV. This will make entering very long dropdowns quite a bit easier. View list field settings for more information."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a filter to the submission data table within the wp-admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that was causing some user's success pages to display incorrectly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added additional default styling rules to improve general form output includng inline list items when selecting left or right labels."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed the label and field output for the password field to make styling easier."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a filter to the individual user-submitted values that are emailed when \"Include a list of fields?\" is checked - ninja_forms_email_user_value."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a filter to the label of the default field list that is sent if the \"Include a list of fields?\" is checked - ninja_forms_email_field_label."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a filter to the table of defalut fields that is ssent if the \"Include a list of fields?\" is checked - ninja_forms_email_field_list."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the option to hide a setting using the admin metabox registration."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Cleaned up the Basic Settings metabox to make it more inuitive."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause administrator emails to not send properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Moved some options around in the Form Settings tab to make them more usable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused forms submitted with errors to not re-fill properly when the form re-loaded."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added User Analytics to the extensions page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause checkboxes not to validate properly when set as required."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pressing the enter key on the Field Settings tab will no longer submit the field settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pressing the enter key on the Field Settings tab while typing a list option label or value will now add another option."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a Star Rating field that will allow users to select from 1 to X stars. The X can be changed to whatever you'd like."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Cleaned up portions of the code so that it better fits WordPress standards."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed the transparency on the help text icon"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new filter for form classes. The filter ninja_forms_form_class can be used to add or remove classes to forms. It is passed the current form class and the form ID."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Reformatted several files to make them cleaner and easier to read."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved the way that list fields work slightly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added four action hooks that are ran whenever an admin page is saved. ninja_forms_save_admin_metabox_option, ninja_forms_save_admin_metabox, ninja_forms_save_admin_sidebar, ninja_forms_save_admin_tab."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the new Campaign Monitor Extension to the extension list and the add-ons page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a typo that redirecte the \"More Plugin Information\" link to a bad url."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed another bug that prevented AJAX submissions form working properly with PHP versions below 5.3."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause CSV files to not be emailed to administrators."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an \"undefined variable\" notice with the list field type."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added an admin metabox option type of \"multi_select.\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented AJAX submissions form working properly with PHP versions below 5.3."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ninja Forms should now properly enqueue scripts for masking, datepicker, and other jQuery elements only if they are in your form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new filter for the classess output for a field: ninja_forms_display_field_class."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that was causing list fields to work improperly with the Conditionals Extension."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added an option to email a CSV file of the user's submission to the administrator email addresses upon form submission."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Submission emailing has been moved to the ninja_forms_post_process hook from the ninja_forms_process hook."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The function used to export submissions now accepts a second parameter $return. Setting this to true will cause the function to return the CSV string rather than output the file for download."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new action hook that runs if a form is set to \"Require Logged-In\", but the user is not logged in. It is named: ninja_forms_display_user_not_logged_in."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added new filters for the arguments sent to the wp_editor() function when a rich text editor is rendered. They are:   ninja_forms_textarea_rte (Front-End Textarea), ninja_forms_admin_metabox_rte (Ninja Forms admin settings areas), ninja_forms_edit_field_rte (Field settings)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new form setting to prevent non-logged-in users from viewing or submitting the form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new filter named: ninja_forms_display_show_form. It is passed $display, a bool() true or false, along with the form_id. It expects a bool() true or false return. If false, the form will not be output to the screen. This is different than the behavior of the ninja_forms_display_form_visibility filter."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause the success message to not show up properly when using AJAX."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a major bug with displaying success messages via AJAX."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a success message display bug."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an email formatting bug that was prevenitng HTML emails from displaying properly for some users."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented the \"inside\" label position from working properly with textareas."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that could cause the 'ninja_forms_display_form' shortcode to work incorrectly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with adding administrator email addresses incorrectly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused success messages to show in the wrong form when adding multiple forms to a single page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented some installations from being able to use AJAX submissions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a problem with appending a form to a page or using a shortcode that sometimes caused extra breaks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused some users issues with using AJAX submissions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused extensions to show as \"installed\" even if they were not."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "AJAX submissions have been re-added. Visit the \"Basic Settings\" metabox underneath the \"Form Settings\" tab to enable this feature."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "In the near future, there will be more options and documentation related to this feature."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Submissions are now listed from most recent to oldest. A sortable table is in the works."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the output of the ninja_forms_get_form_id() JS function to just an ID number."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Hidden Fields should now always properly assign values if set to \"Username,\" \"Firstname,\" etc."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the way that the password field works so that it can be used for both registration and normal password entry."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a scheduled action hook (ninja_forms_daily_action) that is executed on a daily basis."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added an option to the \"textbox\" field type so that the \"From Name\" of a form submission email can be set as well as the \"From Email.\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "$ninja_forms_processing-&gt;get_form_setting('sub_id') will now populate with the ID of the submission after it has been inserted into the database."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<p>Fixed a bug in the redirect script that was causing some users to crash instead of changing sites. Ninja Forms now sets a $_SESSION variable, $_SESSION['ninja_forms_values'], equal to an array that looks like: array( 'field_id' =&gt; 32, 'user_value' =&gt; 'whatever the user submitted' ) just before it redirects. The target page can access these variables for processing or display.</p>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<p>Fixed a bug with the ninja_forms_register_tab_metabox_options() function</p>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that was causing odd behaviour when two or more forms were on the same page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Modified the way that Ninja Forms outputs admin metaboxes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Modified the way that Ninja Forms outputs errors and success messages."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new field type of \"Password.\" This field offers the ability to add a password input textbox to your forms, including both password and re-enter password boxes. Ninja Forms will ensure that the text entered into these boxes matches. Please note that using this field within your forms to do things like logins, registrations, etc. will require custom coding."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Modified the way that Ninja Forms created admin metaboxes. Metabox options should now properly output in the order in which they are registered."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new serializeToArray function to the admin.js to fix a bug some users encountered with popup boxes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed unused files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a JS bug that prevented some users from adding new form fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the option to set an email address as the “From” address within the field settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added basic email validation. This does NOT validate that the email address exists, but only that it is semantically correct."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a label in the plugin settings “Label” tab for an invalid email address."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Shortcode and Template Function output to the Form List. You can now copy and paste the shortcode from there."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Admin metaboxes will now remember whether or not they were closed or open."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented some users from adding new fields."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a label field to the plugin settings page that will allow users to set the message displayed above the form when there is a required field error."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Setting a text or textarea’s label position to ‘inside’ will now cause the label to be auto-removed when the input receives focus. If a user leaves the field blank, the label will return."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Increased the max file size for form imports."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a filter: ninja_forms_field_wrap_class. This filter is sent a string that contains the wrap class for each field along with its field id."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The CSS class of the list field wrapping div has been modified slightly. It has been changed from .list to .list-dropdown where dropdown is the list type."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a new shortcode for inserting the date into the success message and emails: [ninja_forms_sub_date format=\"m/d/Y\"]. It follows the php.net date() string formats and defaults to m/d/Y."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented Help Text from displayin properly when the label was set to the “inside” position."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a checkbox to allow the appending of field values to administrator emails."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Save form settings is now checked by default when creating a form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Hide form after successful submission is now checked by default when creating a new form."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed the [label] system to [ninja_forms_field id=3] where 3 is the field ID that you want to insert."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that caused design elements, especially text fields, from showing on multi-part forms."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug in the backend admin system that was causing problems with the Uploads Browser/Upload Settings tabs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "To prevent conflicts with other plugins, we removed the position declaration from the admin menu hook. This means that the Forms link will now float to the bottom of the admin menu."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that was causing help text to be repeated underneath sections of the Form Settings Tab."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that prevented list-based checkboxes from showing up properly when editing submissions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that was causing required checkboxes not to validate properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several bugs including:"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "A bug that caused multiple forms to a single page broke some JS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Various export bugs. Exporting submissions should work properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Various activation bugs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<p>Varous bugs on the admin/back-end.</p>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<p>Added widget functionality. You can now add Ninja Forms to your sidebars via a widget.</p>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Lots of bug fixes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Filter User and Admin email subject line for [bracketed] labels."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add an action hook to User and Email sending."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add an option to the \"user email\" section for attaching user submitted values."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "\"Settings saved\" now appears properly when saving plugin settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with including display js and css for core and extensions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed the label \"Error message shown when all fields are empty.\" This wasn't used anyway."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Shortcodes. They can be used like: [ninja_forms_display_form id=3]."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug where saving plugin settings would break upon HTML entry."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Replaced isset( $ninja_forms_processing with is_object( $ninja_forms_processing."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several activation bugs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Version 2.0 is a major leap forward for Ninja Forms. It is much more stable and developer friendly than previous versions of the plugin."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "<em>Security:</em>"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "<em>Bugs:</em>"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "<em>Features:</em>"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "<em>Changes:</em>"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "<em>Security Update:</em>"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Fixed a bug in the redirect script that was causing some users to crash instead of changing sites. Ninja Forms now sets a $_SESSION variable, $_SESSION['ninja_forms_values'], equal to an array that looks like: array( 'field_id' =&gt; 32, 'user_value' =&gt; 'whatever the user submitted' ) just before it redirects. The target page can access these variables for processing or display."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Fixed a bug with the ninja_forms_register_tab_metabox_options() function"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "*Changed the way that \"settings saved\" messages appear. When creating a save function on the admin-backend, you can now return the update message you wish users to see."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Varous bugs on the admin/back-end."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Added widget functionality. You can now add Ninja Forms to your sidebars via a widget."
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Use"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "For help and video tutorials, please visit our website: <a href=\"http://docs.ninjaforms.com/?utm_medium=referral&amp;utm_source=wordpress.org&amp;utm_campaign=Ninja+Forms+Readme&amp;utm_content=Ninja+Forms+Docs\">Ninja Forms Documentation</a>"
+msgstr ""
