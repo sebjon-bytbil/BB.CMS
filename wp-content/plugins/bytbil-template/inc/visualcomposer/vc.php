@@ -22,6 +22,7 @@ include('shortcodes/accordion.php'); # Accordion
 include('shortcodes/separator.php'); # Avskiljare
 include('shortcodes/imageslider.php'); # Bildspel
 include('shortcodes/offers.php'); # Erbjudanden
+include('shortcodes/iframe.php'); # Iframe
 include('shortcodes/map.php'); # Karta
 include('shortcodes/openhours.php'); # Öppettider
 

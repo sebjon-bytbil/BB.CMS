@@ -13,11 +13,17 @@ class IFrameShortcode extends ShortcodeBase
 
     function processData($atts)
     {
+        $atts['iframe'] = true;
+        $url = isset($atts['url']) ? $atts['url'] : false;
+
+        if (!$url || filter_var($url, FILTER_VALIDATE_URL) === false)
+            $atts['iframe'] = false;
+
         $border = self::Exists($atts['border'], '0');
         $border_style = ' style="border:0px;"';
-        if ($border === '1') {
+        if ($border === '1')
             $border_style = ' style="border:2px solid #2a2a2a;"';
-        }
+
         $atts['border_style'] = $border_style;
 
         return $atts;
