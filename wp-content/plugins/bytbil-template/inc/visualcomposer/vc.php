@@ -18,6 +18,7 @@ include('params/radio.php');
 include('params/wysiwyg.php');
 
 // Shortcodes
+include('shortcodes/accordion.php'); # Accordion
 include('shortcodes/separator.php'); # Avskiljare
 include('shortcodes/imageslider.php'); # Bildspel
 include('shortcodes/offers.php'); # Erbjudanden

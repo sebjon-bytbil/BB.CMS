@@ -13,7 +13,14 @@ class AccordionShortcode extends ShortcodeBase
 
     function processData($atts)
     {
-        $atts['accordions'] = vc_param_group_parse_atts($atts['accordions']);
+        $accordions = vc_param_group_parse_atts($atts['accordions']);
+        $filtered = array_filter($accordions);
+
+        if (!empty($filtered))
+            $atts['accordions'] = $accordions;
+        else
+            $atts['accordions'] = false;
+
         return $atts;
     }
 }
