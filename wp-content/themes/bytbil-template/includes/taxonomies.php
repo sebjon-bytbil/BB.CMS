@@ -61,4 +61,46 @@ function bbtemplate_register_taxonomies()
     );
 }
 add_action('init', 'bbtemplate_register_taxonomies');
+
+/**
+ * Automatically adds terms based if they exist or not,
+ * upon post creation.
+ */
+function bbtemplate_add_term($post_id, $post, $update)
+{
+    if ($update) {
+        $post_type = get_post_type($post_id);
+        if ($post_type === 'facility') {
+            $departments = get_field('facility-departments', $post_id);
+            if ($departments) {
+                foreach ($departments as $department) {
+                    if ($department['facility-department'] !== '') {
+                        if (is_null(term_exists($department['facility-department'], 'department'))) {
+                            wp_insert_term(
+                                $department['facility-department'],
+                                'department',
+                                array(
+                                    'description' => '',
+                                    'slug' => $department['facility-department']
+                                )
+                            );
+                        }
+                    }
+                }
+            }
+        } elseif ($post_type === 'brand') {
+            if (is_null(term_exists($post->post_title, 'brand'))) {
+                wp_insert_term(
+                    $post->post_title,
+                    'brand',
+                    array(
+                        'description' => '',
+                        'slug' => $post->post_title
+                    )
+                );
+            }
+        }
+    }
+}
+add_action('wp_insert_post', 'bbtemplate_add_term', 10, 3);
 ?>
