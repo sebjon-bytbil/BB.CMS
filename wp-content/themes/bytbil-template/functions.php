@@ -3,6 +3,7 @@
 // Plugins
 include 'plugins/bytbilcms-anlaggning/bytbilcms-anlaggning.php';
 include 'plugins/bytbilcms-erbjudanden/bytbilcms-erbjudanden.php';
+include 'plugins/bytbilcms-personal/bytbilcms-personal.php';
 include 'plugins/wp_bootstrap_navwalker.php';
 
 // Activates specified plugins on theme load

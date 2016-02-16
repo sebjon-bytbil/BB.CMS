@@ -41,6 +41,8 @@ class StaffShortcode extends ShortcodeBase
         $employees[$i]['image'] = $image['url'];
         $employees[$i]['work_title'] = get_field('employee-jobtitle', $id);
         $employees[$i]['email'] = get_field('employee-email', $id);
+        $employees[$i]['hide-email'] = get_field('employee-email-hide', $id);
+        $employees[$i]['text'] = get_field('employee-textarea', $id);
         $phonenumbers = get_field('employee-phonenumbers', $id);
         if (!empty($phonenumbers)) {
             $employees[$i]['phone'] = $phonenumbers[0]['employee-phonenumber-number'];
@@ -104,7 +106,10 @@ class StaffShortcode extends ShortcodeBase
                     }
                 }
             } elseif ($type === 'employee') {
-                $ids = self::Exists($atts['employees'], false);
+                $ids = false;
+
+                if (isset($atts['employees']))
+                    $ids = $atts['employees'];
 
                 if ($ids) {
                     $expl = explode(',', $ids);

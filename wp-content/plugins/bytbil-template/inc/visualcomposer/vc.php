@@ -25,6 +25,7 @@ include('shortcodes/offers.php'); # Erbjudanden
 include('shortcodes/iframe.php'); # Iframe
 include('shortcodes/map.php'); # Karta
 include('shortcodes/menu.php'); # Meny
+include('shortcodes/staff.php'); # Personal
 include('shortcodes/openhours.php'); # Öppettider
 
 /**
