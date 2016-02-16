@@ -6,7 +6,7 @@ define('VCADMINURL', plugin_dir_url(__FILE__));
 include('includes/remove-standard-elements.php');
 
 // Icons
-include('includes/ionicons.php');
+include('includes/icons/icons.php');
 
 // Custom params
 include('params/cpt.php');

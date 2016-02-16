@@ -31,7 +31,7 @@ function something()
         'settings' => array(
             'emptyIcon' => false,
             'type' => 'ionicons',
-            'source' => require_once('icons/ionicons.php')
+            'source' => require_once('ionicons.php')
         ),
         'dependency' => array(
             'element' => 'i_type',
