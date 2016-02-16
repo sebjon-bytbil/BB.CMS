@@ -24,6 +24,7 @@ include('shortcodes/imageslider.php'); # Bildspel
 include('shortcodes/offers.php'); # Erbjudanden
 include('shortcodes/iframe.php'); # Iframe
 include('shortcodes/map.php'); # Karta
+include('shortcodes/menu.php'); # Meny
 include('shortcodes/openhours.php'); # Öppettider
 
 /**
