@@ -12,6 +12,7 @@ include('includes/icons/icons.php');
 include('params/cpt.php');
 include('params/cptlist.php');
 include('params/datepicker.php');
+include('params/integer.php');
 include('params/map.php');
 include('params/multiselect.php');
 include('params/pages.php');
@@ -27,6 +28,7 @@ include('shortcodes/offers.php'); # Erbjudanden
 include('shortcodes/iframe.php'); # Iframe
 include('shortcodes/map.php'); # Karta
 include('shortcodes/menu.php'); # Meny
+include('shortcodes/news.php'); # Nyheter
 include('shortcodes/staff.php'); # Personal
 include('shortcodes/openhours.php'); # Öppettider
 

@@ -83,6 +83,16 @@ a:hover {
 }
 
 /* Admin Menu */
+#adminmenu #menu-dashboard .wp-menu-image:before {
+    font-family: ionicons;
+    content: "\f13f";
+}
+
+#adminmenu #menu-posts-news .wp-menu-image:before {
+    font-family: ionicons;
+    content: "\f472";
+}
+
 #adminmenu #toplevel_page_nav-menus .wp-menu-image:before {
     font-family: ionicons;
     content: "\f394";

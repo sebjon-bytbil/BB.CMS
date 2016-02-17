@@ -1,12 +1,12 @@
-<?php $dir = get_template_directory_uri(); ?>
+<?php if ($id) : ?>
 
-<?php if($id) { ?>
-
-    <div class="bb-news">
+    <div class="col-xs-12">
         <h4><?php echo $title; ?></h4>
+        <?php echo $excerpt; ?>
+        <a href="<?php echo $url; ?>">Läs mer</a>
     </div>
 
-<?php } else { ?>
+<?php else : ?>
 
     <div class="bb-news">
         <div class="row">
@@ -30,4 +30,4 @@
         <?php } ?>
     </div>
 
-<?php } ?>
+<?php endif; ?>

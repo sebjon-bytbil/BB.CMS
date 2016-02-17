@@ -22,24 +22,25 @@ class NewsShortcode extends ShortcodeBase
 
     function processData($atts)
     {
+        $atts['id'] = false;
 
         if ($atts['news_choice'] == 'all') {
 
             $columns = $atts['columns'];
 
             $relation = array('relation' => 'OR');
-            $posts_per_page = $atts['posts_per_page'];
 
-            if($atts['posts_per_page'] == null) {
-                $posts_per_page = "-1";
-            }
+            if (!isset($atts['posts_per_page']))
+                $posts_per_page = '-1';
+            else
+                $posts_per_page = $atts['posts_per_page'];
 
             $taxonomy_query = array();
             $taxonomy_terms = array();
 
-            if($atts['news_categories']) {
+            if (isset($atts['news_categories']) && $atts['news_categories'] != 0) {
 
-                $categories = explode(",", $atts['news_categories']);
+                $categories = explode(',', $atts['news_categories']);
 
                 foreach($categories as $category) {
                     array_push(
@@ -49,16 +50,16 @@ class NewsShortcode extends ShortcodeBase
                 }
 
                 $taxonomy_query = array(
-                    'taxonomy'	=> 'news_categories',
-                    'field'		=> 'term_id',
-                    'terms'		=> $taxonomy_terms,
-                    'operator'  => 'IN',
+                    'taxonomy'=> 'news_categories',
+                    'field' => 'term_id',
+                    'terms' => $taxonomy_terms,
+                    'operator' => 'IN',
                 );
             }
 
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-            if(count($taxonomy_query) == 0) {
+            if (count($taxonomy_query) == 0) {
                 $args = array(
                     'posts_per_page'    => $posts_per_page,
                     'orderby'           => 'date',
@@ -79,16 +80,14 @@ class NewsShortcode extends ShortcodeBase
                 );
             }
 
-            //echo "<pre>"; print_r($args); echo "</pre>"; // Useful for viewing the arguments in their entirety
+            $news = new WP_Query($args);
 
-            $news = new WP_Query( $args );
-
-            if ( $news->have_posts() ) :
+            if ($news->have_posts()) :
 
                 $items = array();
                 $i = 0;
 
-                while ( $news->have_posts() ) : $news->the_post();
+                while ($news->have_posts()) : $news->the_post();
 
                     // Headline
                     $items[$i]['headline'] = get_the_title();
@@ -97,8 +96,8 @@ class NewsShortcode extends ShortcodeBase
                     $items[$i]['date'] = get_the_date('Y-m-d');
 
                     // Article text
-                    $content = apply_filters( 'the_content', get_the_content() );
-                    $content = str_replace( ']]>', ']]&gt;', $content );
+                    $content = apply_filters('the_content', get_the_content());
+                    $content = str_replace(']]>', ']]&gt;', $content);
                     $items[$i]['article_text'] = $content;
 
                     // Article excerpt
@@ -115,21 +114,25 @@ class NewsShortcode extends ShortcodeBase
 
             endif;
 
-            $atts['pagination_prev'] = get_previous_posts_link( '&lsaquo; Föregående sida' );
-            $atts['pagination_separator'] = get_previous_posts_link() ? " &nbsp;|&nbsp; " : "";
-            $atts['pagination_next'] = get_next_posts_link( 'Nästa sida &rsaquo;', $news->max_num_pages );
+            $atts['pagination_prev'] = get_previous_posts_link('&lsaquo; Föregående sida');
+            $atts['pagination_separator'] = get_previous_posts_link() ? ' &nbsp;|&nbsp; ' : '';
+            $atts['pagination_next'] = get_next_posts_link('Nästa sida &rsaquo;', $news->max_num_pages);
 
             wp_reset_query();
 
         } else {
-
             $id = self::Exists($atts['news'], false);
-            if ($id) {
-                $image = get_field('offer-image', $id);
-                $atts['image_url'] = $image['url'];
+            $atts['id'] = $id;
 
-                $title = get_field('offer-title', $id);
-                $atts['title'] = $title;
+            if ($id) {
+                $post = get_post($id);
+                if (!is_null($post)) {
+                    setup_postdata($id);
+                    $atts['title'] = get_the_title($id);
+                    $atts['excerpt'] = get_the_excerpt();
+                    $atts['url'] = get_permalink($id);
+                    wp_reset_postdata();
+                }
             }
 
         }
@@ -176,7 +179,7 @@ function bb_init_news_shortcode()
                 'type' => 'checkbox',
                 'heading' => 'Filtrera på kategori',
                 'param_name' => 'news_categories',
-                'value' => get_tax_terms('news_categories'),
+                'value' => get_tax_terms('news_categories', 'kategorier'),
                 'dependency' => array(
                     'element' => 'news_choice',
                     'value' => 'all'
@@ -232,7 +235,7 @@ function bb_init_news_shortcode()
     $vcNews = new NewsShortcode($map);
 }
 
-function get_tax_terms($taxonomy) {
+function get_tax_terms($taxonomy, $tax_name) {
     $args = array(
         'hide_empty' => 0
     );
@@ -240,8 +243,12 @@ function get_tax_terms($taxonomy) {
 
     $terms_array = array();
 
-    foreach($terms as $term) {
-        $terms_array[$term->name] = $term->term_id;
+    if (!empty($terms)) {
+        foreach($terms as $term) {
+            $terms_array[$term->name] = $term->term_id;
+        }
+    } else {
+        $terms_array['Hittade inga ' . $tax_name] = 0;
     }
 
     return $terms_array;

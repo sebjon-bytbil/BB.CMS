@@ -7,6 +7,7 @@ include 'includes/taxonomies.php';
 include 'plugins/bytbilcms-anlaggning/bytbilcms-anlaggning.php';
 include 'plugins/bytbilcms-erbjudanden/bytbilcms-erbjudanden.php';
 include 'plugins/bytbilcms-marken/bytbilcms-marken.php';
+include 'plugins/bytbilcms-nyheter/bytbilcms-nyheter.php';
 include 'plugins/bytbilcms-personal/bytbilcms-personal.php';
 include 'plugins/wp_bootstrap_navwalker.php';
 
