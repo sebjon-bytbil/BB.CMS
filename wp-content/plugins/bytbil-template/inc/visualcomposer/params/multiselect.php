@@ -20,7 +20,8 @@ function bb_param_multiselect($settings, $value)
         . $settings['param_name']
         . ' ' . $settings['type'] . '">';
 
-    $value = explode(",", $value);
+    if (!is_array($value))
+        $value = explode(',', $value);
 
     $term = (isset($settings['term_tax']) && $settings['term_tax']) ? true : false;
 
@@ -61,8 +62,9 @@ function bb_param_multiselect($settings, $value)
 function build_select_option($option_label, $option_value, $value)
 {
     $selected = '';
-    if (in_array($option_value, $value)) {
-        $selected = ' selected="selected"';
+    if (!is_null($value)) {
+        if (in_array($option_value, $value))
+            $selected = ' selected="selected"';
     }
 
     return '<option value="' . $option_value . '"' . $selected . '>' . $option_label . '</option>';
