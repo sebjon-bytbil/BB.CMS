@@ -19,7 +19,6 @@ function vc_remove_standard_elements()
         vc_remove_element('vc_custom_heading');
         vc_remove_element('vc_empty_space');
         vc_remove_element('vc_flickr');
-        vc_remove_element('vc_gallery');
         vc_remove_element('vc_gitem_animated_block');
         vc_remove_element('vc_gitem_col');
         vc_remove_element('vc_gitem_image');
