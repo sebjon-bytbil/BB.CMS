@@ -50,26 +50,18 @@ function sitesettings_on_save($id, $post, $update)
             error_log('Failed to create: ' . __DIR__ . '/assets/' . $subdomain . '/');
     }
 
-    $background = get_field('sitesetting-background-color', $id);
+    $css = '';
 
-    if ($background) {
-        $background = <<<BACKGROUND
-body {
-    background-color: $background;
-}
-BACKGROUND;
-    }
-
-    $css = <<<CSS
-$background
-$background
-CSS;
+    include 'includes/appearance.php';
+    $appearance = sitesettings_get_appearances($id);
+    $css .= $appearance;
 
     $full_dir_path = __DIR__ . '/assets/' . $subdomain . '/';
     $full_css_path = $full_dir_path . $subdomain . '-' . $id . '.css';
 
     $dir = __DIR__;
 
+    // Delete old CSS if it exists
     if (file_exists($full_css_path))
         unlink($full_css_path);
 

@@ -133,7 +133,7 @@ if(function_exists("register_field_group"))
             array (
                 'key' => 'field_56cae29e0393a',
                 'label' => 'Rundning',
-                'name' => 'sitersetting-border-radius-val',
+                'name' => 'sitesetting-border-radius-val',
                 'type' => 'number',
                 'instructions' => 'Välj hur många pixlar hörnen skall rundas med.',
                 'conditional_logic' => array (
