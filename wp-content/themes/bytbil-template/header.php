@@ -38,6 +38,7 @@
 
         <!-- Main -->
         <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1455264805959'; ?>" rel="stylesheet">
+        <?php sitesettings_styles(); ?>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

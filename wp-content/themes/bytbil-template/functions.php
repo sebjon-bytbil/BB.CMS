@@ -9,6 +9,7 @@ include 'plugins/bytbilcms-erbjudanden/bytbilcms-erbjudanden.php';
 include 'plugins/bytbilcms-marken/bytbilcms-marken.php';
 include 'plugins/bytbilcms-nyheter/bytbilcms-nyheter.php';
 include 'plugins/bytbilcms-personal/bytbilcms-personal.php';
+include 'plugins/bytbilcms-sitesettings/bytbilcms-sitesettings.php';
 include 'plugins/wp_bootstrap_navwalker.php';
 
 // Activates specified plugins on theme load
@@ -19,6 +20,7 @@ function bbtemplate_activate_plugins()
         'acf-repeater/acf-repeater.php', # ACF Repeater
         'advanced-custom-field-repeater-collapser/acf_repeater_collapser.php', # ACF Repeater Collapser
         'advanced-custom-fields/acf.php', # ACF
+        'advanced-custom-fields-code-area-field/acf-code_area.php', # ACF Code Area
         'bytbil-template/bytbil-template.php', # BytBil Mallsidor
         'js_composer/js_composer.php', # Visual Composer
         'ninja-forms/ninja-forms.php', # Ninja Forms
@@ -42,6 +44,7 @@ function bbtemplate_deactivate_plugins()
         'acf-repeater/acf-repeater.php', # ACF Repeater
         'advanced-custom-field-repeater-collapser/acf_repeater_collapser.php', # ACF Repeater Collapser
         'advanced-custom-fields/acf.php', # ACF
+        'advanced-custom-fields-code-area-field/acf-code_area.php', # ACF Code Area
         'bytbil-template/bytbil-template.php', # BytBil Mallsidor
         'js_composer/js_composer.php', # Visual Composer
         'ninja-forms/ninja-forms.php', # Ninja Forms
