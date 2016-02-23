@@ -13,6 +13,7 @@ $settings_pages = get_posts(array(
 
     <form method="post" action="options.php">
         <?php wp_nonce_field('update-options'); ?>
+            <input type="radio" name="selected-settings-page" value="0" <?php if (get_option('selected-settings-page') == 0 || !get_option('selected-settings-page')) : ?> checked <?php endif; ?>/>Standard<br/>
         <?php foreach ($settings_pages as $page) : ?>
             <input type="radio" name="selected-settings-page"
                    value="<?php echo $page->ID; ?>" <?php if (get_option('selected-settings-page') == $page->ID) : ?> checked <?php endif; ?>/><?php echo $page->post_title; ?>

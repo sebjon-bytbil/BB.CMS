@@ -13,7 +13,7 @@ function sitesettings_styles()
 {
     $subdomain = sitesettings_get_blog_subdomain();
     $selected_settings_page = get_option('selected-settings-page');
-    if (!$selected_settings_page)
+    if (!$selected_settings_page || $selected_settings_page == 0)
         return '';
 
     $css_uri = get_template_directory_uri() . '/plugins/bytbilcms-sitesettings/assets/' . $subdomain . '/' . $subdomain . '-' . $selected_settings_page . '.min.css';
@@ -53,8 +53,12 @@ function sitesettings_on_save($id, $post, $update)
     $css = '';
 
     include 'includes/appearance.php';
-    $appearance = sitesettings_get_appearances($id);
+    $appearance = sitesettings_get_appearance_css($id);
     $css .= $appearance;
+
+    include 'includes/menus.php';
+    $menus = sitesettings_get_menus_css($id);
+    $css .= $menus;
 
     $full_dir_path = __DIR__ . '/assets/' . $subdomain . '/';
     $full_css_path = $full_dir_path . $subdomain . '-' . $id . '.css';

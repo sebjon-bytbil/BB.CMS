@@ -1,6 +1,6 @@
 <?php
 
-function sitesettings_get_appearances($id)
+function sitesettings_get_appearance_css($id)
 {
     $css = '';
 
