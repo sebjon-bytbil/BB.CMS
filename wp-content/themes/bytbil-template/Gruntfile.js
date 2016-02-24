@@ -47,20 +47,18 @@ module.exports = function(grunt) {
                 shorthandCompacting: false,
                 roundPrecision: -1
             },
-            target: {
+            css: {
+                files: {
+                    'assets/css/style.min.css': ['assets/fonts/fonts.con.css', 'assets/css/vendor/vendor.con.css', 'assets/css/theme/theme.con.css']
+                }
+            },
+            customcss: {
                 files: [{
                     expand: true,
                     src: ['plugins/bytbilcms-sitesettings/assets/**/*.css', '!plugins/bytbilcms-sitesettings/assets/**/*.min.css'],
                     ext: '.min.css'
-                    //'plugins/bytbilcms-sitesettings/assets/**/*.min.css': ['plugins/bytbilcms-sitesettings/assets/**/*.css']
-                    //'assets/css/style.min.css': ['assets/fonts/fonts.con.css', 'assets/css/vendor/vendor.con.css', 'assets/css/theme/theme.con.css']
                 }]
             }
-            //customcss: {
-           //   files: {
-          //        'plugins/bytbilcms-sitesettings/assets/**/*.min.css': ['plugins/bytbilcms-sitesettings/assets/**/*.css']
-         //     }
-        //  }
         },
         uglify: {
             options: {
@@ -115,9 +113,8 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', ['clean:vendorcss', 'clean:themecss', 'concat:devcss', 'replace:devcss']);
 
     grunt.registerTask('concatcss', ['clean:fonts', 'clean:vendorcss', 'clean:themecss', 'concat:fonts', 'concat:vendorcss', 'concat:themecss']);
-    grunt.registerTask('minifycss', ['clean:fonts', 'clean:vendorcss', 'clean:themecss', 'concat:fonts', 'concat:vendorcss', 'concat:themecss', 'cssmin', 'cachebreaker:devcss']);
+    grunt.registerTask('minifycss', ['clean:fonts', 'clean:vendorcss', 'clean:themecss', 'concat:fonts', 'concat:vendorcss', 'concat:themecss', 'cssmin:css', 'cachebreaker:devcss']);
     grunt.registerTask('concatjs', ['clean:vendorjs', 'clean:themejs', 'concat:vendorjs', 'concat:themejs']);
     grunt.registerTask('minifyjs', ['clean:vendorjs', 'clean:themejs', 'concat:vendorjs', 'concat:themejs', 'uglify', 'cachebreaker:devjs']);
-    grunt.registerTask('test', ['cssmin']);
-
+    grunt.registerTask('customcss', ['cssmin:customcss']);
 };

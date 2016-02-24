@@ -349,8 +349,11 @@ nav,
     background: #eee;
 }
 
-
-
+.header-shortlinks {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+}
 
 /* Flexslider Fixes */
 
