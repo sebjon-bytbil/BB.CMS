@@ -42,6 +42,7 @@ function sitesettings_get_forms_css($id)
 .field-wrap input[type="submit"],
 .field-wrap button {
     background-color: $button_bg_color;
+    border-radius: $border_radius;
     color: $button_color;
     $border_button_css;
 }
