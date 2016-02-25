@@ -241,6 +241,10 @@ function sitesettings_on_save($id, $post, $update)
     $header = sitesettings_get_header_css($id);
     $css .= $header;
 
+    include 'includes/forms.php';
+    $forms = sitesettings_get_forms_css($id);
+    $css .= $forms;
+
     $full_dir_path = __DIR__ . '/assets/' . $subdomain . '/';
     $full_css_path = $full_dir_path . $subdomain . '-' . $id . '.css';
 
@@ -258,7 +262,7 @@ function sitesettings_on_save($id, $post, $update)
     file_put_contents($full_css_path, $css);
 
     // Run grunt task
-    $output = shell_exec('cd ' . get_template_directory() . ' && /usr/local/bin/node /usr/local/bin/grunt testing 2>&1');
+    $output = shell_exec('cd ' . get_template_directory() . ' && /usr/local/bin/node /usr/local/bin/grunt customcss 2>&1');
 }
 add_action('wp_insert_post', 'sitesettings_on_save', 10, 3);
 
@@ -302,3 +306,75 @@ function sitesettings_on_delete($id)
         delete_option('selected-settings-page');
 }
 add_action('delete_post', 'sitesettings_on_delete', 10);
+
+/**
+ * Gets field settings for specified field ID
+ */
+function sitesettings_get_field_settings($id)
+{
+    global $ninja_forms_loading;
+    global $ninja_forms_processing;
+
+    if (is_object($ninja_forms_processing))
+        $row = $ninja_forms_processing->get_field_settings($id);
+    elseif (is_object($ninja_forms_loading))
+        $row = $ninja_forms_loading->get_field_settings($id);
+    else
+        $row = null;
+
+    return $row;
+}
+
+/**
+ * Modifies field wrap classes
+ */
+function sitesettings_field_wrap_class($field_wrap_class, $id)
+{
+    $field_wrap_class = str_replace('field-wrap', 'field-wrap form-group', $field_wrap_class);
+
+    return $field_wrap_class;
+}
+
+/**
+ * Modifies form field classes
+ */
+function sitesettings_form_field($data, $id)
+{
+    $settings = sitesettings_get_field_settings($id);
+
+    if (is_null($settings) || empty($settings['type']))
+        return $data;
+
+    if (empty($data['class']))
+        $data['class'] = '';
+
+    if ($settings['type'] === '_text' ||
+        $settings['type'] === '_textarea' ||
+        $settings['type'] === '_profile_pass' ||
+        $settings['type'] === '_spam' ||
+        $settings['type'] === '_number' ||
+        $settings['type'] === '_country' ||
+        $settings['type'] === '_tax' ||
+        $settings['type'] === '_calc') {
+        $data['class'] .= ' form-control';
+    }
+
+    if ($settings['type'] === '_desc')
+        $data['class'] .= ' form-group';
+
+    if ($settings['type'] === '_list') {
+        if ($settings['data']['list_type'] !== 'checkbox' && $settings['data']['list_type'] !== 'radio')
+            $data['class'] .= ' form-control';
+    }
+
+    if ($settings['type'] === '_submit')
+        $data['class'] .= ' btn';
+
+    return $data;
+}
+
+if (defined('NINJA_FORMS_VERSION')) {
+    // Apply bootstrap classes to ninja forms fields
+    add_filter('ninja_forms_display_field_wrap_class', 'sitesettings_field_wrap_class', 10, 2);
+    add_action('ninja_forms_field', 'sitesettings_form_field', 10, 2);
+}
