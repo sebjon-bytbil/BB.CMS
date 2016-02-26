@@ -61,13 +61,26 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-collapse">
                         <?php
-                        wp_nav_menu(array(
+                        $menu = new wp_bootstrap_navwalker();
+
+                        if ($id = sitesettings_check_current_setting()) {
+                            if (get_field('sitesetting-menus-settings', $id) && in_array('hover', get_field('sitesetting-menus-settings', $id))) {
+                                $menu->setHover(true);
+                            }
+                        }
+
+                        $hover = $menu->getHover() ? 'hover' : 'click';
+
+                        $menu_string = wp_nav_menu(array(
                             'theme_location' => 'header-menu',
-                            'depth' => 2,
+                            'echo' => false,
+                            'depth' => 3,
                             'container' => false,
-                            'menu_class' => 'nav navbar-nav navbar-menu',
-                            'walker' => new wp_bootstrap_navwalker()
+                            'menu_class' => 'nav navbar-nav navbar-menu ' . $hover,
+                            'walker' => $menu
                         ));
+
+                        echo $menu_string;
                         ?>
                     </div>
                 </div>
@@ -76,7 +89,7 @@
 
             <?php else : ?>
 
-            <nav class="navbar navbar-fixed-top full-width" role="navigation">
+            <nav id="menu" class="navbar navbar-fixed-top full-width" role="navigation">
                 <div class="container-fluid wrapper">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle slideout" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
@@ -88,15 +101,27 @@
                     </div>
 
                     <?php
-                    wp_nav_menu(array(
+                    $menu = new wp_bootstrap_navwalker();
+
+                    if ($id = sitesettings_check_current_setting()) {
+                        if (get_field('sitesetting-menus-settings', $id) && in_array('hover', get_field('sitesetting-menus-settings', $id))) {
+                            $menu->setHover(true);
+                        }
+                    }
+
+                    $hover = $menu->getHover() ? 'hover' : 'click';
+
+                    $menu_string = wp_nav_menu(array(
                         'theme_location' => 'header-menu',
                         'depth' => 2,
                         'container' => 'div',
                         'container_class' => 'navbar-offcanvas offcanvas canvas-slid',
-                        'menu_class' => 'nav navbar-nav navbar-right',
+                        'menu_class' => 'nav navbar-nav navbar-right ' . $hover,
                         'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                        'walker' => new wp_bootstrap_navwalker()
+                        'walker' => $menu
                     ));
+
+                    echo $menu_string;
                     ?>
 
                 </div>

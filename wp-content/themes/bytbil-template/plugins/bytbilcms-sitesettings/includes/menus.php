@@ -56,7 +56,6 @@ CSS;
     font-weight: bold;
 CSS;
         }
-        // CAPS
     }
 
     $mm_link_color_hover = get_field('sitesetting-menus-link-color-hover', $id);
@@ -74,6 +73,18 @@ CSS;
         if (in_array('bold', $mm_link_effects_hover)) {
             $mm_link_effects_hover_css .= <<<CSS
     font-weight: bold;
+CSS;
+        }
+    }
+
+    if ($mm_settings) {
+        if (in_array('hover', $mm_settings)) {
+            $css .= <<<CSS
+@media (min-width: 768px) {
+    #menu .nav > li:hover > ul.dropdown-menu, #menu .nav > li:active > ul.dropdown-menu {
+        display: block;
+    }
+}
 CSS;
         }
     }
