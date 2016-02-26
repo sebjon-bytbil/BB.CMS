@@ -16,7 +16,7 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
 
         <!-- Main -->
-        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1456310904316'; ?>" rel="stylesheet">
+        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1456480538298'; ?>" rel="stylesheet">
         <?php sitesettings_styles(); ?>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,9 +31,50 @@
         <?php sitesettings_custom_code(); ?>
     </head>
 
-    <body>
+    <body<?php if (!WIDE_DESIGN) : ?> class="narrow"<?php endif; ?>>
+
+        <?php if (!WIDE_DESIGN) : ?>
+        <div class="wrapper">
+        <?php endif; ?>
 
         <header>
+
+            <?php if (!WIDE_DESIGN) : ?>
+            <div class="container-fluid wrapper" id="top">
+                <div class="col-xs-12 col-sm-6">
+                    <a class="navbar-brand" href="/">
+                    <?php sitesettings_logotype(); ?>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+
+                </div>
+            </div>
+            <nav id="menu">
+                <div class="container-fluid">
+                    <div class="navbar-header" data-toggle="collapse" data-target="#navbar-collapse">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="ion ion-android-menu"></i>
+                        </button>
+                        <span class="navbar-brand visible-xs">Meny</span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'header-menu',
+                            'depth' => 2,
+                            'container' => false,
+                            'menu_class' => 'nav navbar-nav navbar-menu',
+                            'walker' => new wp_bootstrap_navwalker()
+                        ));
+                        ?>
+                    </div>
+                </div>
+            </nav>
+            <div class="clearfix"></div>
+
+            <?php else : ?>
 
             <nav class="navbar navbar-fixed-top full-width" role="navigation">
                 <div class="container-fluid wrapper">
@@ -63,5 +104,6 @@
                 <?php sitesettings_shortlinks(); ?>
 
             </nav>
+            <?php endif; ?>
 
         </header>

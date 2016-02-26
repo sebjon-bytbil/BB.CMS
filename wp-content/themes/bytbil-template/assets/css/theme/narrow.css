@@ -1,0 +1,15 @@
+body.narrow {
+    padding-top: 0;
+}
+
+body.narrow header {
+    padding: 0 0 30px;
+}
+
+body.narrow .nav {
+    width: 100%;
+}
+
+#top {
+    padding: 30px 15px;
+}

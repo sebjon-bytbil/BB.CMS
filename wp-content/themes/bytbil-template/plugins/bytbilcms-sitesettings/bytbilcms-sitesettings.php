@@ -54,6 +54,21 @@ if(function_exists("register_field_group"))
                 'type' => 'tab',
             ),
             array (
+                'key' => 'field_57dad8e019382',
+                'label' => 'Design',
+                'name' => 'sitesetting-design',
+                'type' => 'radio',
+                'instructions' => 'Välj om du vill bred eller smal design.',
+                'choices' => array (
+                    'wide' => 'Bred',
+                    'narrow' => 'Smal',
+                ),
+                'other_choice' => 0,
+                'save_other_choice' => 0,
+                'default_value' => 'wide',
+                'layout' => 'horizontal'
+            ),
+            array (
                 'key' => 'field_56cad7e503926',
                 'label' => 'Redigera bakgrund',
                 'name' => 'sitesetting-edit-background',
@@ -120,6 +135,49 @@ if(function_exists("register_field_group"))
                 'min' => '',
                 'max' => '',
                 'step' => '',
+            ),
+            array (
+                'key' => 'field_56dad1000e929',
+                'label' => 'Wrapper : Bakgrundsfärg',
+                'name' => 'sitesetting-wrapper-bg-color',
+                'type' => 'color_picker',
+                'instructions' => 'Välj bakgrundsfärg för wrappern.',
+                'conditional_logic' => array (
+                    'status' => 1,
+                    'rules' => array (
+                        array (
+                            'field' => 'field_57dad8e019382',
+                            'operator' => '==',
+                            'value' => 'narrow',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+                'default_value' => '',
+            ),
+            array (
+                'key' => 'field_56caw2001e872',
+                'label' => 'Wrapper : Skugga',
+                'name' => 'sitesetting-wrapper-shadow',
+                'type' => 'text',
+                'instructions' => 'Fyll i CSS-kod för wrapperns skugga.',
+                'conditional_logic' => array (
+                    'status' => 1,
+                    'rules' => array (
+                        array (
+                            'field' => 'field_57dad8e019382',
+                            'operator' => '==',
+                            'value' => 'narrow',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+                'default_value' => '',
+                'placeholder' => 'Exempel: 0px 1px 2px #333',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
             ),
             array (
                 'key' => 'field_56cae20803939',

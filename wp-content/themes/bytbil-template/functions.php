@@ -12,6 +12,16 @@ include 'plugins/bytbilcms-personal/bytbilcms-personal.php';
 include 'plugins/bytbilcms-sitesettings/bytbilcms-sitesettings.php';
 include 'plugins/wp_bootstrap_navwalker.php';
 
+if ($id = sitesettings_check_current_setting()) {
+    $design = get_field('sitesetting-design', $id);
+    if ($design === 'wide')
+        define('WIDE_DESIGN', true);
+    else
+        define('WIDE_DESIGN', false);
+} else {
+    define('WIDE_DESIGN', true);
+}
+
 // Activates specified plugins on theme load
 function bbtemplate_activate_plugins()
 {

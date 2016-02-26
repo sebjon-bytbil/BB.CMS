@@ -16,6 +16,7 @@ function sitesettings_get_menus_css($id)
     $mm_shadow_css = '';
     $mm_border_css = '';
     $mm_border_radius_css = '';
+    $mm_caps_css = '';
 
     if ($mm_settings) {
         if (in_array('shadow', $mm_settings)) {
@@ -31,9 +32,9 @@ CSS;
 border: $mm_border;
 CSS;
         }
-        if (in_array('rounded', $mm_settings)) {
-            $mm_border_radius_css = <<<CSS
-border-radius: $mm_border_radius;
+        if (in_array('caps', $mm_settings)) {
+            $mm_caps_css .= <<<CSS
+    text-transform: uppercase;
 CSS;
         }
     }
@@ -93,6 +94,7 @@ CSS;
     background: $mm_link_bg_color !important;
     color: $mm_link_color !important;
     $mm_link_effects_css
+    $mm_caps_css
 }
 .nav > li > a:hover,
 .nav > .open > a,

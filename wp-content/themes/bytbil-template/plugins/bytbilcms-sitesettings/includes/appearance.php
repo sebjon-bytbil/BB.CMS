@@ -4,15 +4,7 @@ function sitesettings_get_appearance_css($id)
 {
     $css = '';
 
-    // Wrapper
-    if ($wrapper = get_field('sitesetting-wrapper-width', $id)) {
-        $wrapper = $wrapper . 'px';
-        $css .= <<<CSS
-.container-fluid.wrapper {
-    max-width: $wrapper;
-}
-CSS;
-    }
+    $design = get_field('sitesetting-design', $id);
 
     // Background
     if ($edit_background = get_field('sitesetting-edit-background', $id)) {
@@ -37,6 +29,36 @@ CSS;
         }
     }
 
+    // Wrapper
+    if ($wrapper = get_field('sitesetting-wrapper-width', $id)) {
+        $wrapper = $wrapper . 'px';
+        $css .= <<<CSS
+.wrapper {
+    max-width: $wrapper;
+}
+.container {
+    max-width: $wrapper;
+}
+CSS;
+    }
+    if ($design === 'narrow') {
+        if ($wrapper_bg_color = get_field('sitesetting-wrapper-bg-color', $id)) {
+            $css .= <<<CSS
+body > .wrapper {
+    background: $wrapper_bg_color;
+}
+CSS;
+        }
+        if ($wrapper_shadow = get_field('sitesetting-wrapper-shadow', $id)) {
+            $css .= <<<CSS
+body > .wrapper {
+    box-shadow: $wrapper_shadow;
+}
+CSS;
+        }
+    }
+
+
     // Rounded Corners
     if ($rounded_corners = get_field('sitesetting-border-radius', $id)) {
         $radius = get_field('sitesetting-border-radius-val', $id);
@@ -51,6 +73,18 @@ a.vc_btn3 {
     overflow: hidden;
 }
 CSS;
+        if ($design === 'narrow') {
+            $css .= <<<CSS
+.nav,
+.bb-imageslider li img {
+    border-radius: $radius;
+}
+.nav li:first-child a {
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+}
+CSS;
+        }
     }
 
     // Font
