@@ -16,7 +16,7 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
 
         <!-- Main -->
-        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1456756591788'; ?>" rel="stylesheet">
+        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1456828622746'; ?>" rel="stylesheet">
         <?php sitesettings_styles(); ?>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

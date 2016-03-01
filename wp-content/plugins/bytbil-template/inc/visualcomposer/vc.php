@@ -90,5 +90,13 @@ function vc_add_standard_params()
         'description' => 'Flytta Design Options CSS till inner wrapper.'
     );
     vc_add_param('vc_column', $wrapper);
+
+    $link = array(
+        'type' => 'vc_link',
+        'heading' => 'Kolumnlänk',
+        'param_name' => 'column_link',
+        'description' => 'Lägg till en länk om du vill länka hela kolumnen.'
+    );
+    vc_add_param('vc_column', $link);
 }
 add_action('init', 'vc_add_standard_params');

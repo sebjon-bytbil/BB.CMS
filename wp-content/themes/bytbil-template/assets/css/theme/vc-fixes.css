@@ -2,6 +2,10 @@
  * Alterations to standard Visual Composer elements
  */
 
+.wpb_column > .wpb_wrapper > a > *:last-child {
+    margin-bottom: 0;
+}
+
 /* WP Text */
 .wpb_wrapper .textwidget {
     padding: 0 10px;
