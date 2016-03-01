@@ -1,5 +1,5 @@
 <?php if ($open_hours) : ?>
-    <div class="container">
+    <div class="container-fluid">
     <?php foreach ($open_hours as $open_hour) : ?>
         <div class="col-xs-12 col-sm-<?php echo $bootstrap; ?>">
             <div class="plug">

@@ -13,3 +13,20 @@ body.narrow .nav {
 #top {
     padding: 30px 15px;
 }
+
+#top .brands {
+    text-align: right;
+    padding-top: 0;
+}
+
+#top .brands > a {
+    display: inline-block;
+}
+
+.brands img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+    margin-left: 15px;
+    float: right;
+}

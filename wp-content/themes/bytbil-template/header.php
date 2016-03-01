@@ -16,7 +16,7 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
 
         <!-- Main -->
-        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1456480538298'; ?>" rel="stylesheet">
+        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1456756591788'; ?>" rel="stylesheet">
         <?php sitesettings_styles(); ?>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -39,15 +39,26 @@
 
         <header>
 
-            <?php if (!WIDE_DESIGN) : ?>
+        <?php if (!WIDE_DESIGN) :
+            $cols = 6;
+            $brand_cols = 6;
+            if ($id = sitesettings_check_current_setting()) {
+                $cols = get_field('sitesetting-header-columns', $id);
+                if (!$cols)
+                    $cols = 6;
+                $brand_cols = 12 - $cols;
+                if ($brand_cols == 0)
+                    $brandcols = 12;
+            }
+            ?>
             <div class="container-fluid wrapper" id="top">
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-<?php echo $cols; ?>">
                     <a class="navbar-brand" href="/">
                     <?php sitesettings_logotype(); ?>
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-
+                <div class="col-xs-12 col-sm-<?php echo $brand_cols; ?>">
+                    <?php sitesettings_brands(); ?>
                 </div>
             </div>
             <nav id="menu">
@@ -87,7 +98,7 @@
             </nav>
             <div class="clearfix"></div>
 
-            <?php else : ?>
+        <?php else : ?>
 
             <nav id="menu" class="navbar navbar-fixed-top full-width" role="navigation">
                 <div class="container-fluid wrapper">
@@ -129,6 +140,6 @@
                 <?php sitesettings_shortlinks(); ?>
 
             </nav>
-            <?php endif; ?>
+        <?php endif; ?>
 
         </header>

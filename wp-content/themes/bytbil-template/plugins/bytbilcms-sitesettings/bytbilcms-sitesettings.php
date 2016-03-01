@@ -41,6 +41,40 @@ function cptui_register_my_cpt_sitesettings()
     ));
 }
 
+add_action('init', 'cptui_register_my_cpt_settingsfooter');
+function cptui_register_my_cpt_settingsfooter()
+{
+    register_post_type('settingsfooter', array(
+        'label' => 'Sidfot',
+        'desctription' => '',
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => 'edit.php?post_type=sitesettings',
+        'capability_type' => 'post',
+        'map_meta_cap' => true,
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'sidfot', 'with_front' => false),
+        'query_var' => true,
+        'supports' => array('title', 'revisions', 'editor'),
+        'labels' => array(
+            'name' => 'Sidfot',
+            'singular_name' => 'Sidfot',
+            'menu_name' => 'Sidfot',
+            'add_new' => 'Lägg till sidfot',
+            'add_new_item' => 'Ny sidfot',
+            'edit' => 'Redigera sidfot',
+            'edit_item' => 'Redigera sidfot',
+            'new_item' => 'Ny sidfot',
+            'view' => 'Visa sidfot',
+            'view_item' => 'Visa sidfot',
+            'search_items' => 'Sök sidfötter',
+            'not_found' => 'Inga sidfötter hittades',
+            'not_found_in_trash' => 'Inga sidfötter i papperskorgen',
+            'parent' => 'Sidfotens förälder',
+        )
+    ));
+}
+
 if(function_exists("register_field_group"))
 {
     register_field_group(array (
@@ -226,7 +260,7 @@ if(function_exists("register_field_group"))
                 'type' => 'select',
                 'instructions' => 'Välj ett typsnitt i listan som skall användas av rubriker på sidan.',
                 'choices' => array (
-                    'Open Sans' => 'Open Sans',
+                    'open_sansregular' => 'Open Sans',
                     'Arial' => 'Arial',
                     'Helvetica' => 'Helvetica',
                     'Georgia' => 'Georgia',
@@ -868,6 +902,25 @@ if(function_exists("register_field_group"))
                 'theme' => 'solarized',
             ),
             array (
+                'key' => 'field_56caf4d3229c1',
+                'label' => 'Märken',
+                'name' => 'sitesetting-brands',
+                'type' => 'relationship',
+                'post_type' => array(
+                    0 => 'brand',
+                ),
+                'taxonomy' => array(
+                    0 => 'all',
+                ),
+                'filters' => array(
+                    0 => 'search',
+                ),
+                'result_elements' => array(
+                    0 => 'post_title',
+                ),
+                'max' => '',
+            ),
+            array (
                 'key' => 'field_56caf5e5229c1',
                 'label' => 'Snabblänkar',
                 'name' => 'sitesetting-header-shortlinks',
@@ -1188,7 +1241,7 @@ if(function_exists("register_field_group"))
                 'type' => 'post_object',
                 'instructions' => 'Välj en sida som du vill använda som sidfot på alla sidor.',
                 'post_type' => array (
-                    0 => 'page',
+                    0 => 'settingsfooter',
                 ),
                 'taxonomy' => array (
                     0 => 'all',

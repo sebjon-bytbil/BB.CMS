@@ -129,6 +129,31 @@ function sitesettings_logotype()
     }
 }
 
+function sitesettings_brands()
+{
+    if (!$id = sitesettings_check_current_setting()) {
+        return '';
+    } else {
+        $brands = get_field('sitesetting-brands', $id);
+        if (!$brands || $brands == '') {
+            return '';
+        } else { ?>
+            <div class="brands"><?php
+            foreach ($brands as $brand) :
+                $bid = $brand->ID;
+                $link = get_field('brand_link', $bid);
+                $alt_title = 'Besök ' . $brand->post_title . ' på ' . $link; ?>
+                <a target="<?php the_field('brand_link-target', $bid); ?>"
+                   href="<?php echo $link; ?>">
+                    <img src="<?php the_field('brand_image', $bid); ?>"
+                         alt="<?php echo $alt_title; ?>"
+                         title="<?php echo $alt_title; ?>">
+                </a>
+            <?php endforeach; ?></div><?php
+        }
+    }
+}
+
 function sitesettings_shortlinks()
 {
     if (!$id = sitesettings_check_current_setting()) {
