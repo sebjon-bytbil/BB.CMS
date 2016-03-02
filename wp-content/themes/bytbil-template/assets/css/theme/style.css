@@ -55,6 +55,12 @@ a:visited {
     color: #00aacc;
 }
 
+body .wpb_wrapper > a,
+body .wpb_wrapper > a:link,
+body .wpb_wrapper > a:visited {
+    color: inherit;
+}
+
 img {
     max-width: 100%;
 }
@@ -350,9 +356,8 @@ nav,
     background: #eee;
 }
 
-.header-shortlinks {
+body.wide .header-shortlinks {
     position: absolute;
-    bottom: -70px;
     right: 0;
 }
 

@@ -140,24 +140,25 @@ CSS;
         }
     }
     $css .= <<<CSS
-a,
-a:link,
-a:visited {
-    color: $link_color !important;
+.wpb_wrapper > div a,
+.wpb_wrapper > div a:link,
+.wpb_wrapper > div a:visited,
+.wpb_wrapper > :not(.vc_btn3-container) a {
+    color: $link_color;
     $link_effect_css
 }
 footer a,
 footer a:link,
 footer a:visited {
-    color: $link_color !important;
+    color: $link_color;
     $link_effect_css
 }
-a:hover {
-    color: $link_color_hover !important;
+body .wpb_wrapper > div a:hover {
+    color: $link_color_hover;
     $link_effect_hover_css
 }
 footer a:hover {
-    color: $link_color_hover !important;
+    color: $link_color_hover;
     $link_effect_hover_css
 }
 CSS;

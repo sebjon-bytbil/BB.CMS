@@ -4,6 +4,7 @@
 include 'includes/taxonomies.php';
 
 // Plugins
+include 'plugins/bytbilcms-acf-ionicons/bytbilcms-acf-ionicons.php';
 include 'plugins/bytbilcms-anlaggning/bytbilcms-anlaggning.php';
 include 'plugins/bytbilcms-erbjudanden/bytbilcms-erbjudanden.php';
 include 'plugins/bytbilcms-marken/bytbilcms-marken.php';

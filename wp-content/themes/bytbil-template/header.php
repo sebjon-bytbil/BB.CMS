@@ -4,6 +4,7 @@
 } ?>>
     <head>
         <meta charset="UTF-8">
+        <meta name="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -16,7 +17,7 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
 
         <!-- Main -->
-        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1456828622746'; ?>" rel="stylesheet">
+        <link href="<?php echo get_template_directory_uri() . '/assets/css/style.min.css?rel=1456840291760'; ?>" rel="stylesheet">
         <?php sitesettings_styles(); ?>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,7 +32,7 @@
         <?php sitesettings_custom_code(); ?>
     </head>
 
-    <body<?php if (!WIDE_DESIGN) : ?> class="narrow"<?php endif; ?>>
+    <body class="<?php if (WIDE_DESIGN) : ?>wide<?php else : ?>narrow<?php endif; ?>">
 
         <?php if (!WIDE_DESIGN) : ?>
         <div class="wrapper">
@@ -39,7 +40,11 @@
 
         <header>
 
-        <?php if (!WIDE_DESIGN) :
+        <?php if (!WIDE_DESIGN) : ?>
+
+            <?php sitesettings_shortlinks(); ?>
+
+            <?php
             $cols = 6;
             $brand_cols = 6;
             if ($id = sitesettings_check_current_setting()) {

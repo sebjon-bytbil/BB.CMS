@@ -1180,11 +1180,12 @@ if(function_exists("register_field_group"))
                         'default_value' => '#333333',
                     ),
                     array (
-                        'key' => 'field_56caf9685eceb',
+                        'key' => 'field_56d5bcfa92e05',
                         'label' => 'Ikon',
                         'name' => 'sitesetting-header-shortlink-icon',
-                        'type' => 'text',
+                        'type' => 'ionicons',
                         'instructions' => 'Välj en ikon som skall visas bredvid med länken.',
+                        'allow_null' => 1,
                         'conditional_logic' => array (
                             'status' => 1,
                             'rules' => array (
@@ -1196,13 +1197,6 @@ if(function_exists("register_field_group"))
                             ),
                             'allorany' => 'all',
                         ),
-                        'column_width' => '',
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'formatting' => 'none',
-                        'maxlength' => '',
                     ),
                 ),
                 'row_min' => '',

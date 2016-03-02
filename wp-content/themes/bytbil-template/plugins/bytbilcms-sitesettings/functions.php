@@ -164,7 +164,7 @@ function sitesettings_shortlinks()
             return '';
         } else {
             ?>
-            <div class="header-shortlinks">
+            <div class="header-shortlinks pull-right">
             <?php
             $i = 1;
             while (has_sub_fields('sitesetting-header-shortlinks', $id)) {
@@ -182,17 +182,17 @@ function sitesettings_shortlinks()
 
                 $target = get_sub_field('sitesetting-header-shortlink-target');
 
+                $icon = false;
                 if (get_sub_field('sitesetting-header-shortlink-appearance')) {
-                    $bg_color = get_sub_field('sitesetting-header-shortlink-bgcolor');
-                    $bg_color_hover = get_sub_field('sitesetting-header-shortlink-bgcolor-hover');
-                    $text_color = get_sub_field('sitesetting-header-shortlink-color');
-                    $text_color_hover = get_sub_field('sitesetting-header-shortlink-color-hover');
+                    $shortlink_icon = get_sub_field('sitesetting-header-shortlink-icon');
+                    if ($shortlink_icon && $shortlink_icon != '')
+                        $icon = true;
                 }
 
                 $target = get_sub_field('sitesetting-header-shortlink-target');
                 ?>
 
-                <a id="link<?php echo $i; ?>" href="<?php echo $url; ?>" target="<?php echo $target; ?>" class="top-menu-link"><?php echo $text; ?></a>
+                <a id="link<?php echo $i; ?>" href="<?php echo $url; ?>" target="<?php echo $target; ?>" class="top-menu-link"><?php if ($icon) : ?><i class="ion <?php echo $shortlink_icon; ?>"></i> <?php endif; ?><?php echo $text; ?></a>
 
                 <?php
                 $i++;
