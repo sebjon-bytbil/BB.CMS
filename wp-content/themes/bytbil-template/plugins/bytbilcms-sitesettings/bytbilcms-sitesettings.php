@@ -1233,7 +1233,7 @@ if(function_exists("register_field_group"))
                 'label' => 'Sidfot',
                 'name' => 'sitesetting-footer',
                 'type' => 'post_object',
-                'instructions' => 'Välj en sida som du vill använda som sidfot på alla sidor.',
+                'instructions' => 'Välj en sidfot som du vill visa på alla sidor.',
                 'post_type' => array (
                     0 => 'settingsfooter',
                 ),

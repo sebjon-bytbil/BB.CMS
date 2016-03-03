@@ -23,81 +23,44 @@ class MapShortcode extends ShortcodeBase
 
     function processData($atts)
     {
-        $map_type = self::Exists($atts['map_type'], 'map');
-        if ($map_type === 'facility') {
-            $id = self::Exists($atts['coordinates_facility'], '');
-            if ($id !== '') {
-                $facility_list = explode(",", $atts['coordinates_facility']);
-
+        $atts['single'] = false;
+        $atts['facilities'] = false;
+        $type = self::Exists($atts['map_type'], 'map');
+        if ($type === 'facility') {
+            if (isset($atts['facility']) && $atts['facility'] !== '') {
                 $facilities = array();
+                $facility = $atts['facility'];
+                $ids = explode(',', $facility);
 
-                $args = array(
-                    'posts_per_page'    => -1,
-                    'orderby'           => 'title',
-                    'order'             => 'ASC',
-                    'post_type'         => 'facility',
-                );
+                foreach ($ids as $i => $id) {
+                    $facilities[$i]['name'] = get_the_title($id);
 
-                $facility_query = new WP_Query( $args );
+                    $coordinates = array();
+                    $visiting_address = get_field('facility-visiting-address', $id);
+                    $coordinates['lat'] = $visiting_address['lat'];
+                    $coordinates['lng'] = $visiting_address['lng'];
+                    $facilities[$i]['coordinates'] = $coordinates;
 
-                if ( $facility_query->have_posts() ) :
-
-                    $i = 0;
-
-                    while ( $facility_query->have_posts() ) : $facility_query->the_post();
-
-                        $facilities[$i]['slug'] = $facility_query->post->post_name;
-
-                        // Facility/location name
-                        $facilities[$i]['name'] = get_the_title();
-
-                        // Permalink
-                        $facilities[$i]['permalink'] = get_the_permalink();
-
-                        // Visiting address
-                        $visiting_address = get_field('facility-visiting-address');
-                        $visiting_address = explode(",", $visiting_address['address']);
-                        $facilities[$i]['visiting_address_street'] = $visiting_address[0];
-                        $facilities[$i]['visiting_address_zip_postal'] = $visiting_address[1];
-
-                        // Postal address
-                        $facilities[$i]['use_postal'] = get_field('facility-use-postal-adress');
-                        $facilities[$i]['postal_address'] = get_field('facility-other-adress');
-
-                        // Phone numbers
-                        $facilities[$i]['phonenumbers'] = get_field('facility-phonenumbers');
-
-                        // E-mail addresses
-                        $facilities[$i]['emails'] = get_field('facility-emails');
-
-                        // Departments
-                        $facilities[$i]['departments'] = get_field('facility-departments');
-
-                        $i++;
-
-                    endwhile;
-
-                endif;
-
-                wp_reset_query();
-
-                $coordinates = array();
-
-                $i = 0;
-                foreach($facility_list as $facility) {
-                    if($facility_list[$i] !== "0") { // Temporary solution to a weird bug related to a hex value
-                        array_push($coordinates, get_field('facility-visiting-address', $facility_list[$i]));
+                    $custom_address = get_field('facility-use-postal-adress', $id);
+                    if ($custom_address) {
+                        $address = get_field('facility-other-adress', $id);
+                    } else {
+                        $visiting_address = explode(',', $visiting_address['address']);
+                        $address = $visiting_address[0] . ' ' . $visiting_address[1];
                     }
-                    $i++;
+                    $facilities[$i]['address'] = $address;
+
+                    $facilities[$i]['phonenumbers'] = get_field('facility-phonenumbers', $id);
+
+                    $facilities[$i]['emails'] = get_field('facility-emails', $id);
                 }
+
+                $atts['facilities'] = $facilities;
+                $atts['zoom'] = 14;
             }
-
-            $atts['facilities'] = $facilities;
-            $atts['coordinates_list'] = $coordinates;
-            $atts['zoom'] = 14;
-
-        } else if ($map_type === 'map') {
-            $coordinates = self::Exists($atts['coordinates_map'], '');
+        } else if ($type === 'map') {
+            $atts['single'] = true;
+            $coordinates = self::Exists($atts['map'], '');
             if ($coordinates !== '') {
                 $coordinates_expl = explode(',', $coordinates);
                 $coordinates = array(
@@ -161,17 +124,23 @@ function bb_init_map_shortcode()
                 'type' => 'cptlist',
                 'post_type' => 'facility',
                 'heading' => 'Välj anläggning',
-                'param_name' => 'coordinates_facility',
+                'param_name' => 'facility',
                 'placeholder' => 'Välj anläggning',
-                'value' => '',
-                'description' => 'Välj en existerande anläggning.'
+                'description' => 'Välj en existerande anläggning.',
+                'dependency' => array(
+                    'element' => 'map_type',
+                    'value' => 'facility'
+                )
             ),
             array(
                 'type' => 'map',
                 'heading' => 'Karta',
-                'param_name' => 'coordinates_map',
-                'value' => '',
-                'description' => 'Sök efter den plats som du vill visa på kartan.'
+                'param_name' => 'map',
+                'description' => 'Sök efter den plats som du vill visa på kartan.',
+                'dependency' => array(
+                    'element' => 'map_type',
+                    'value' => 'map'
+                )
             ),
             array(
                 'type' => 'checkbox',
@@ -187,15 +156,6 @@ function bb_init_map_shortcode()
                 'heading' => 'Kontroller',
                 'param_name' => 'controls',
                 'description' => 'Bocka i om du vill visa kontroller på kartan.',
-                'value' => array(
-                    'Ja' => '1'
-                )
-            ),
-            array(
-                'type' => 'checkbox',
-                'heading' => 'Anläggningskort',
-                'param_name' => 'map_departments',
-                'description' => 'Bocka i om du vill visa anläggningskort ovanpå kartan.',
                 'value' => array(
                     'Ja' => '1'
                 )

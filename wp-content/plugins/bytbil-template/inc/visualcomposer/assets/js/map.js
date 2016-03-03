@@ -1,17 +1,20 @@
-(function($) {
+(function($, window) {
     'use strict';
+
+    function loadGoogleMaps() {
+        var loadGoogleMaps = new CustomEvent(
+            'loadGoogleMaps', {
+                'detail': 'map'
+            }
+        );
+        window.dispatchEvent(loadGoogleMaps);
+    }
 
     if (window.location !== window.top.location) {
         $(window).on('vc_reload', function() {
-            var initMap = new Event('initMap');
-            window.dispatchEvent(initMap);
+            loadGoogleMaps();
         });
+    } else {
+        loadGoogleMaps();
     }
-
-    var loadGoogleMaps = new CustomEvent(
-        'loadGoogleMaps', {
-            'detail': 'map'
-        }
-    );
-    window.dispatchEvent(loadGoogleMaps);
-})(jQuery);
+})(jQuery, window);
