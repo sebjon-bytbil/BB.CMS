@@ -100,6 +100,12 @@ module.exports = function(grunt) {
                     to: 'style.con.css\''
                 }]
             }
+        },
+        watch: {
+            styles: {
+                files: ['assets/css/**/*.css', 'assets/js/**/*.js', '!assets/css/**/*.con.css', '!assets/css/**/*.min.css', '!assets/js/**/*.con.js', '!assets/js/**/*.min.js'],
+                tasks: ['minifycss', 'minifyjs']
+            }
         }
     });
 
@@ -107,6 +113,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-cache-breaker');
     grunt.loadNpmTasks('grunt-text-replace');
 
@@ -117,4 +124,5 @@ module.exports = function(grunt) {
     grunt.registerTask('concatjs', ['clean:vendorjs', 'clean:themejs', 'concat:vendorjs', 'concat:themejs']);
     grunt.registerTask('minifyjs', ['clean:vendorjs', 'clean:themejs', 'concat:vendorjs', 'concat:themejs', 'uglify', 'cachebreaker:devjs']);
     grunt.registerTask('customcss', ['cssmin:customcss']);
+    grunt.registerTask('w', ['watch:styles']);
 };

@@ -1240,7 +1240,7 @@ if(function_exists("register_field_group"))
                 'taxonomy' => array (
                     0 => 'all',
                 ),
-                'allow_null' => 0,
+                'allow_null' => 1,
                 'multiple' => 0,
             ),
         ),
