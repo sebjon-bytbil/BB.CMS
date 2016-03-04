@@ -34,9 +34,7 @@
         <?php endforeach; ?>
     </div>
 
-<?php endif; ?>
-
-<?php if ($map) : ?>
+<?php elseif ($map) : ?>
 
     <div id="map-<?php echo $blockid; ?>"
          data-zoom="<?php echo $zoom; ?>"
